@@ -1,0 +1,263 @@
+ Vigas y Cargas
+# - Formulario
+
+---
+
+## Índice
+* [Caso 1](#caso-1)
+* [Caso 2](#caso-2)
+* [Caso 3](#caso-3)
+* [Caso 4](#caso-4)
+* [Caso 5](#caso-5)
+* [Caso 6](#caso-6)
+* [Caso 7](#caso-7)
+
+---
+
+## Caso 1
+Voladizo con
+carga puntual
+$$P$$
+en el extremo.
+
+Esquema:
+* Empotrada en:
+$$x = 0$$
+* Carga $$P$$ en:
+$$x = L$$
+(Hacia abajo)
+
+Deflexión máx:
+$$y_{max} = \frac{P L^3}{3 E I}$$
+En:
+$$x = L$$
+Unidad:
+$$\text{m}$$
+
+Pendiente máx:
+$$\theta = \frac{P L^2}{2 E I}$$
+En:
+$$x = L$$
+Unidad:
+$$\text{rad}$$
+
+Curva elástica:
+$$y = \frac{P}{6 E I}(x^3 - 3 L x^2)$$
+
+---
+
+## Caso 2
+Voladizo con
+carga uniforme
+$$w$$
+distribuida.
+
+Esquema:
+* Empotrada en:
+$$x = 0$$
+* Carga $$w$$ en
+toda la viga.
+(Hacia abajo)
+
+Deflexión máx:
+$$y_{max} = \frac{w L^4}{8 E I}$$
+En:
+$$x = L$$
+Unidad:
+$$\text{m}$$
+
+Pendiente máx:
+$$\theta = \frac{w L^3}{6 E I}$$
+En:
+$$x = L$$
+Unidad:
+$$\text{rad}$$
+
+Curva elástica:
+$$y = \frac{w}{24 E I}(x^4 - 4 L x^3 + 6 L^2 x^2)$$
+
+---
+
+## Caso 3
+Voladizo con
+momento $$M$$
+en el extremo.
+
+Esquema:
+* Empotrada en:
+$$x = 0$$
+* Momento $$M$$
+en:
+$$x = L$$
+(Antihorario)
+
+Deflexión máx:
+$$y_{max} = \frac{M L^2}{2 E I}$$
+En:
+$$x = L$$
+Unidad:
+$$\text{m}$$
+
+Pendiente máx:
+$$\theta = \frac{M L}{E I}$$
+En:
+$$x = L$$
+Unidad:
+$$\text{rad}$$
+
+Curva elástica:
+$$y = -\frac{M}{2 E I}x^2$$
+
+---
+
+## Caso 4
+Biapoyada con
+carga puntual
+$$P$$
+en el centro.
+
+Esquema:
+* Apoyada en:
+$$x = 0$$
+y en:
+$$x = L$$
+* Carga $$P$$ en:
+$$x = L/2$$
+
+Deflexión máx:
+$$y_{max} = \frac{P L^3}{48 E I}$$
+En:
+$$x = L/2$$
+Unidad:
+$$\text{m}$$
+
+Pendiente ext:
+$$\theta_A = -\theta_B$$
+$$\theta = \pm\frac{P L^2}{16 E I}$$
+En apoyos.
+Unidad:
+$$\text{rad}$$
+
+Curva elástica
+(para:
+$$x \le L/2$$
+):
+$$y = \frac{P}{48 E I}(4 x^3 - 3 L^2 x)$$
+
+---
+
+## Caso 5
+Biapoyada con
+carga puntual
+$$P$$
+excéntrica.
+
+Esquema:
+* Apoyada en:
+$$x = 0$$
+y en:
+$$x = L$$
+* Carga $$P$$ en:
+$$x = a$$
+(con:
+$$a > b$$
+y:
+$$a + b = L$$
+)
+
+Deflexión máx:
+$$y_{max} = \frac{P b (L^2 - b^2)^{3/2}}{9 \sqrt{3} E I L}$$
+En:
+$$x_m = \sqrt{\frac{L^2 - b^2}{3}}$$
+Unidad:
+$$\text{m}$$
+
+Pendiente ext:
+En $$x=0$$:
+$$\theta_A = -\frac{P b (L^2 - b^2)}{6 E I L}$$
+En $$x=L$$:
+$$\theta_B = \frac{P a (L^2 - a^2)}{6 E I L}$$
+Unidad:
+$$\text{rad}$$
+
+Curva elástica
+(para:
+$$x < a$$
+):
+$$y = \frac{P b}{6 E I L}[x^3 - (L^2 - b^2)x]$$
+
+Deflexión bajo
+la carga
+(en:
+$$x = a$$
+):
+$$y = -\frac{P a^2 b^2}{3 E I L}$$
+
+---
+
+## Caso 6
+Biapoyada con
+carga uniforme
+$$w$$
+distribuida.
+
+Esquema:
+* Apoyada en:
+$$x = 0$$
+y en:
+$$x = L$$
+* Carga $$w$$ en
+toda la viga.
+(Hacia abajo)
+
+Deflexión máx:
+$$y_{max} = \frac{5 w L^4}{384 E I}$$
+En:
+$$x = L/2$$
+Unidad:
+$$\text{m}$$
+
+Pendiente ext:
+$$\theta = \pm\frac{w L^3}{24 E I}$$
+En apoyos.
+Unidad:
+$$\text{rad}$$
+
+Curva elástica:
+$$y = -\frac{w}{24 E I}(x^4 - 2 L x^3 + L^3 x)$$
+
+---
+
+## Caso 7
+Biapoyada con
+momento $$M$$
+en el apoyo
+derecho.
+
+Esquema:
+* Apoyada en:
+$$x = 0$$
+y en:
+$$x = L$$
+* Momento $$M$$
+en:
+$$x = L$$
+(Antihorario)
+
+Deflexión máx:
+$$y_{max} = \frac{M L^2}{9 \sqrt{3} E I}$$
+En:
+$$x = \frac{L}{\sqrt{3}}$$
+Unidad:
+$$\text{m}$$
+
+Pendiente ext:
+En $$x=0$$:
+$$\theta_A = \frac{M L}{6 E I}$$
+En $$x=L$$:
+$$\theta_B = -\frac{M L}{3 E I}$$
+Unidad:
+$$\text{rad}$$
+
+Curva elástica:
+$$y = -\frac{M}{6 E I L}(x^3 - L^2 x)$$
