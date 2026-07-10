@@ -1,0 +1,1033 @@
+ Flexión Pura
+# y Simple -
+# Ejercicios
+
+---
+
+## Índice
+* [Problema 1](#problema-1)
+* [Problema 2](#problema-2)
+* [Problema 3](#problema-3)
+* [Problema 4](#problema-4)
+* [Problema 5](#problema-5)
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcription:
+Problema 1.
+Tenemos un
+ascensor que
+pesa 2
+toneladas
+colgando de un
+cable de acero
+S355 y de 2 cm
+de diámetro.
+Este cable se
+enrolla sobre
+un tambor de
+radio R.
+Se pide
+calcular el
+mínimo radio
+del tambor
+posible para
+evitar que el
+cable
+sobrepase el
+límite
+elástico del
+acero.
+E=200GPa.
+Solución:
+radio mínimo =
+6.85 m
+Tambor
+Cable
+Ascensor
+
+**Descripción
+gráfica:**
+Esquema de un
+tambor circular
+del que cuelga
+un cable
+vertical con un
+bloque inferior
+rotulado como
+"Ascensor".
+El cable está
+enrollado
+parcialmente
+sobre la parte
+superior del
+tambor.
+
+### Solución Paso a Paso
+
+Datos iniciales:
+
+Masa del
+ascensor:
+$$m = 2000$$
+Unidad:
+$$\text{kg}$$
+
+Peso P de la
+masa (con
+g = 9,81):
+$$P = m \cdot g$$
+$$P = 2000 \cdot 9,81$$
+$$P = 19620$$
+Unidad:
+$$\text{N}$$
+
+Diámetro del
+cable:
+$$d = 20$$
+Unidad:
+$$\text{mm}$$
+
+Radio del
+cable:
+$$r = 10$$
+Unidad:
+$$\text{mm}$$
+
+Límite elástico
+del acero S355:
+$$\sigma_{adm} = 355$$
+Unidad:
+$$\text{MPa}$$
+
+Módulo de
+Young:
+$$E = 200000$$
+Unidad:
+$$\text{MPa}$$
+
+Cálculo del
+área de la
+sección del
+cable:
+$$A = \pi \cdot r^2$$
+$$A = \pi \cdot 10^2$$
+$$A \approx 314,16$$
+Unidad:
+$$\text{mm}^2$$
+
+Tensión axial
+debida al peso
+del ascensor:
+$$\sigma_{ax} = \frac{P}{A}$$
+$$\sigma_{ax} = \frac{19620}{314,16}$$
+$$\sigma_{ax} \approx 62,45$$
+Unidad:
+$$\text{MPa}$$
+
+Tensión máxima
+disponible para
+flexión pura:
+$$\sigma_f = \sigma_{adm} - \sigma_{ax}$$
+$$\sigma_f = 355 - 62,45$$
+$$\sigma_f = 292,55$$
+Unidad:
+$$\text{MPa}$$
+
+Ley de Hooke
+para la flexión
+del cable:
+$$\sigma_f = E \cdot \frac{r}{R}$$
+
+Despejando el
+radio R del
+tambor:
+$$R = \frac{E \cdot r}{\sigma_f}$$
+
+Sustituyendo
+los valores:
+$$R = \frac{200000 \cdot 10}{292,55}$$
+$$R \approx 6836$$
+Unidad:
+$$\text{mm}$$
+
+Conversión a
+metros:
+$$R = 6,84$$
+Unidad:
+$$\text{m}$$
+
+Nota: Si se
+utiliza la
+gravedad
+g = 10 en el
+cálculo del
+peso P:
+$$P = 20000$$
+Unidad:
+$$\text{N}$$
+$$\sigma_{ax} = 63,66$$
+Unidad:
+$$\text{MPa}$$
+$$\sigma_f = 291,34$$
+Unidad:
+$$\text{MPa}$$
+$$R = 6,86$$
+Unidad:
+$$\text{m}$$
+obteniendo el
+valor medio de
+la solución de
+6,85 m.
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcription:
+Problema 2.
+Tenemos un
+cable que pasa
+por dos poleas
+de radios (R)
+2 y 1 m. En el
+extremo hay un
+peso de 50kp.
+El cable está
+construido con
+acero S355.
+¿Cuál sería el
+diámetro
+mínimo del
+cable a
+utilizar?.
+E=200GPa.
+I de un
+círculo:
+\pi R^4 / 4
+Basta con
+expresar R en
+décimas de mm.
+Solución:
+diámetro
+mínimo 2,2 mm
+
+**Descripción
+gráfica:**
+Esquema de un
+cable continuo
+que pasa por
+dos poleas de
+radios
+2,0 m y 1,0 m,
+con un peso
+suspendido de
+50 kp en su
+extremo.
+
+### Solución Paso a Paso
+
+Datos iniciales:
+
+Carga en
+Newtons (con
+g = 9,81):
+$$P = 50 \cdot 9,81$$
+$$P = 490,5$$
+Unidad:
+$$\text{N}$$
+
+Radio de la
+polea 1:
+$$R_1 = 2000$$
+Unidad:
+$$\text{mm}$$
+
+Radio de la
+polea 2 (la
+más pequeña,
+crítica para
+flexión):
+$$R_2 = 1000$$
+Unidad:
+$$\text{mm}$$
+
+Límite elástico
+del acero S355:
+$$\sigma_{adm} = 355$$
+Unidad:
+$$\text{MPa}$$
+
+Módulo de
+Young:
+$$E = 200000$$
+Unidad:
+$$\text{MPa}$$
+
+Ecuación de
+tensión total
+límite:
+$$\sigma_{max} = \sigma_{ax} + \sigma_f$$
+
+Tensión axial
+en función del
+radio r del
+cable:
+$$\sigma_{ax} = \frac{P}{\pi \cdot r^2}$$
+
+Tensión por
+flexión en la
+polea pequeña
+$$R_2$$:
+$$\sigma_f = E \cdot \frac{r}{R_2}$$
+
+Sustituyendo
+los valores:
+$$355 = \frac{490,5}{\pi \cdot r^2} + \frac{200000 \cdot r}{1000}$$
+$$355 = \frac{156,1}{r^2} + 200 \cdot r$$
+
+Multiplicando
+por r al
+cuadrado:
+$$200 \cdot r^3 - 355 \cdot r^2 + 156,1 = 0$$
+
+Resolviendo el
+radio r:
+Probamos con
+r = 1,1 mm:
+$$200 \cdot 1,1^3 - 355 \cdot 1,1^2 + 156,1$$
+$$266,2 - 429,55 + 156,1 = -7,25$$
+$$-7,25 \approx 0$$
+
+Por tanto, el
+radio mínimo r
+en décimas de
+mm es:
+$$r = 1,1$$
+Unidad:
+$$\text{mm}$$
+
+Comprobación:
+$$\sigma_{ax} = \frac{156,13}{1,1^2}$$
+$$\sigma_{ax} \approx 129$$
+Unidad:
+$$\text{MPa}$$
+
+$$\sigma_f = 200 \cdot 1,1$$
+$$\sigma_f = 220$$
+Unidad:
+$$\text{MPa}$$
+
+Tensión total:
+$$\sigma_t = 129 + 220$$
+$$\sigma_t = 349$$
+Unidad:
+$$\text{MPa}$$
+
+Como:
+$$349 < 355$$
+Unidad:
+$$\text{MPa}$$
+el diseño es
+seguro.
+
+Diámetro
+mínimo del
+cable:
+$$d = 2 \cdot r$$
+$$d = 2 \cdot 1,1$$
+$$d = 2,2$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcription:
+Problema 5.
+Calcular la
+máxima sigma y
+la máxima tau
+en la viga de
+la figura.
+24 kN/m
+1,75 m
+25
+20 cm
+
+**Descripción
+gráfica:**
+Viga biapoyada
+con longitud de
+1,75 m, bajo
+una carga
+distribuida
+de 24 kN/m.
+A la derecha se
+muestra la
+sección: un
+rectángulo de
+20 cm de ancho
+y 25 cm de
+canto.
+
+### Solución Paso a Paso
+
+Datos:
+
+Carga
+distribuida:
+$$q = 24$$
+Unidad:
+$$\text{kN/m}$$
+
+Longitud de
+la viga:
+$$L = 1,75$$
+Unidad:
+$$\text{m}$$
+
+Carga total Q:
+$$Q = q \cdot L$$
+$$Q = 24 \cdot 1,75$$
+$$Q = 42$$
+Unidad:
+$$\text{kN}$$
+
+Reacciones de
+apoyo (por
+simetría):
+$$R = \frac{Q}{2}$$
+$$R = \frac{42}{2}$$
+$$R = 21$$
+Unidad:
+$$\text{kN}$$
+
+Esfuerzo
+cortante
+máximo:
+Ocurre en los
+apoyos:
+$$V_{max} = 21$$
+Unidad:
+$$\text{kN}$$
+
+Momento flector
+máximo:
+Ocurre en el
+centro de la
+viga:
+$$M_{max} = \frac{q \cdot L^2}{8}$$
+$$M_{max} = \frac{24 \cdot 1,75^2}{8}$$
+$$M_{max} = 9,1875$$
+Unidad:
+$$\text{kN}\cdot\text{m}$$
+
+Propiedades de
+la sección
+rectangular:
+
+Ancho de la
+sección:
+$$b = 0,20$$
+Unidad:
+$$\text{m}$$
+
+Canto de la
+sección:
+$$h = 0,25$$
+Unidad:
+$$\text{m}$$
+
+Área A de la
+sección:
+$$A = b \cdot h$$
+$$A = 0,20 \cdot 0,25$$
+$$A = 0,05$$
+Unidad:
+$$\text{m}^2$$
+
+Momento de
+inercia de la
+sección:
+$$I = \frac{b \cdot h^3}{12}$$
+$$I = \frac{0,20 \cdot 0,25^3}{12}$$
+$$I \approx 2,604 \cdot 10^{-4}$$
+Unidad:
+$$\text{m}^4$$
+
+Distancia de la
+fibra neutra a
+la más alejada:
+$$c = \frac{h}{2}$$
+$$c = \frac{0,25}{2}$$
+$$c = 0,125$$
+Unidad:
+$$\text{m}$$
+
+Tensión normal
+máxima:
+$$\sigma_{max} = \frac{M_{max} \cdot c}{I}$$
+$$\sigma_{max} = \frac{9,1875 \cdot 0,125}{2,604 \cdot 10^{-4}}$$
+$$\sigma_{max} = 4410$$
+Unidad:
+$$\text{kPa}$$
+$$\sigma_{max} = 4,41$$
+Unidad:
+$$\text{MPa}$$
+
+Tensión
+cortante
+máxima (sección
+rectangular):
+$$\tau_{max} = \frac{3 \cdot V_{max}}{2 \cdot A}$$
+$$\tau_{max} = \frac{3 \cdot 21}{2 \cdot 0,05}$$
+$$\tau_{max} = 630$$
+Unidad:
+$$\text{kPa}$$
+$$\tau_{max} = 0,63$$
+Unidad:
+$$\text{MPa}$$
+
+---
+
+## Problema 4
+
+### Enunciado
+Transcription:
+Problema 6.
+Calcular la
+tensión normal
+y tangencial en
+el punto P. El
+punto P está
+situado en la
+sección marcada
+a 1 del
+empotramiento.
+Las cotas de la
+sección
+rectangular
+están en cm.
+Cotas
+expresadas en m
+
+**Descripción
+gráfica:**
+Viga voladizo
+empotrada en el
+extremo izq.
+y libre en el
+derecho.
+La longitud
+total es de
+5,00 m.
+A 3,00 m del
+apoyo, comienza
+una carga
+distribuida
+de 10 kN/m
+que llega hasta
+el extremo
+derecho (2,00 m
+de carga).
+Se estudia la
+sección a
+1,00 m del
+empotramiento.
+Sección tipo
+cajón:
+rectángulo
+hueco de
+20 x 10 cm
+exteriores y
+18 x 8 cm
+interiores.
+El punto P está
+en el alma, a
+3 cm del eje
+neutro.
+
+### Solución Paso a Paso
+
+Datos:
+
+Carga
+distribuida:
+$$q = 10$$
+Unidad:
+$$\text{kN/m}$$
+
+Posición de la
+sección de
+estudio (desde
+empotramiento):
+$$x_s = 1,00$$
+Unidad:
+$$\text{m}$$
+
+Longitud de la
+zona cargada:
+$$L_{carga} = 2,00$$
+Unidad:
+$$\text{m}$$
+
+Inicio de la
+carga (desde
+empotramiento):
+$$x_i = 3,00$$
+Unidad:
+$$\text{m}$$
+
+Cálculo de la
+fuerza total
+de la carga:
+$$Q = q \cdot L_{carga}$$
+$$Q = 10 \cdot 2,00$$
+$$Q = 20$$
+Unidad:
+$$\text{kN}$$
+$$Q = 20000$$
+Unidad:
+$$\text{N}$$
+
+Posición del
+centro de
+gravedad de la
+carga:
+$$x_c = 3,00 + \frac{2,00}{2}$$
+$$x_c = 4,00$$
+Unidad:
+$$\text{m}$$
+
+Esfuerzo
+cortante en la
+sección
+estudiada:
+$$V = Q$$
+$$V = 20$$
+Unidad:
+$$\text{kN}$$
+$$V = 20000$$
+Unidad:
+$$\text{N}$$
+
+Momento flector
+en la sección
+estudiada:
+$$M = Q \cdot (x_c - x_s)$$
+$$M = 20 \cdot (4,00 - 1,00)$$
+$$M = 20 \cdot 3,00$$
+$$M = 60$$
+Unidad:
+$$\text{kN}\cdot\text{m}$$
+$$M = 6000$$
+Unidad:
+$$\text{kN}\cdot\text{cm}$$
+
+Propiedades de
+la sección
+transversal
+(cajón):
+
+Ancho exterior:
+$$B = 10$$
+Unidad:
+$$\text{cm}$$
+
+Canto exterior:
+$$H = 20$$
+Unidad:
+$$\text{cm}$$
+
+Ancho interior:
+$$b = 8$$
+Unidad:
+$$\text{cm}$$
+
+Canto interior:
+$$h = 18$$
+Unidad:
+$$\text{cm}$$
+
+Momento de
+inercia de la
+sección:
+$$I = \frac{B \cdot H^3}{12} - \frac{b \cdot h^3}{12}$$
+$$I = \frac{10 \cdot 20^3}{12} - \frac{8 \cdot 18^3}{12}$$
+$$I = \frac{80000}{12} - \frac{46656}{12}$$
+$$I = 6666,67 - 3888,00$$
+$$I = 2778,67$$
+Unidad:
+$$\text{cm}^4$$
+
+Tensión normal
+en el punto P
+(a y = 3 cm):
+$$\sigma_P = \frac{M \cdot y_P}{I}$$
+
+Sustituyendo:
+$$\sigma_P = \frac{6000 \cdot 3}{2778,67}$$
+$$\sigma_P \approx 6,478$$
+Unidad:
+$$\text{kN/cm}^2$$
+$$\sigma_P = 64,78$$
+Unidad:
+$$\text{MPa}$$
+
+Tensión
+tangencial
+(cortante) en
+el punto P:
+
+Fórmula de
+Jourawski:
+$$\tau_P = \frac{V \cdot Q_P}{I \cdot t}$$
+
+Donde:
+- t es el ancho
+de almas:
+$$t = 2 \cdot 1$$
+$$t = 2$$
+Unidad:
+$$\text{cm}$$
+
+- QP es el
+primer momento
+de área por
+encima de P:
+
+Área exterior
+superior (de
+y = 3 a 10 cm):
+$$A_e = 10 \cdot 7$$
+$$A_e = 70$$
+Unidad:
+$$\text{cm}^2$$
+
+Centro ext sup:
+$$y_e = 3 + 3,5$$
+$$y_e = 6,5$$
+Unidad:
+$$\text{cm}$$
+
+Q exterior:
+$$Q_e = A_e \cdot y_e$$
+$$Q_e = 70 \cdot 6,5$$
+$$Q_e = 455$$
+Unidad:
+$$\text{cm}^3$$
+
+Área interior
+superior (de
+y = 3 a 9 cm):
+$$A_i = 8 \cdot 6$$
+$$A_i = 48$$
+Unidad:
+$$\text{cm}^2$$
+
+Centro int sup:
+$$y_i = 3 + 3$$
+$$y_i = 6$$
+Unidad:
+$$\text{cm}$$
+
+Q interior:
+$$Q_i = A_i \cdot y_i$$
+$$Q_i = 48 \cdot 6$$
+$$Q_i = 288$$
+Unidad:
+$$\text{cm}^3$$
+
+Q total en P:
+$$Q_P = Q_e - Q_i$$
+$$Q_P = 455 - 288$$
+$$Q_P = 167$$
+Unidad:
+$$\text{cm}^3$$
+
+Cálculo de la
+tensión
+tangencial:
+$$\tau_P = \frac{V \cdot Q_P}{I \cdot t}$$
+$$\tau_P = \frac{20 \cdot 167}{2778,67 \cdot 2}$$
+$$\tau_P = \frac{3340}{5557,34}$$
+$$\tau_P \approx 0,601$$
+Unidad:
+$$\text{kN/cm}^2$$
+$$\tau_P = 6,01$$
+Unidad:
+$$\text{MPa}$$
+
+---
+
+## Problema 5
+
+### Enunciado
+Transcription:
+Problema 6.
+En el punto
+indicado,
+obtener:
+a) \sigma_max
+b) \tau_max
+100 kg, 90 kg,
+110 kg.
+Seccion estudio.
+45, 25, 10,
+5, 1, 1.
+
+**Descripción
+gráfica:**
+Banco de tres
+asientos con
+tres personas
+de 100 kg,
+90 kg y 110 kg.
+Soportado por
+dos apoyos
+A y B.
+El banco tiene
+patas de 45 cm
+de altura.
+El larguero
+horizontal
+tiene voladizos
+de 50 cm en los
+extremos.
+La sección de
+estudio está a
+100 cm del
+apoyo A.
+Sección tipo
+cajón:
+25 x 10 cm
+exteriores y
+espesor de
+1 cm.
+
+### Solución Paso a Paso
+
+Datos de las
+cargas (con
+g = 9,81):
+$$P_1 = 100 \cdot 9,81$$
+$$P_1 = 981$$
+Unidad:
+$$\text{N}$$
+
+$$P_2 = 90 \cdot 9,81$$
+$$P_2 = 883$$
+Unidad:
+$$\text{N}$$
+
+$$P_3 = 110 \cdot 9,81$$
+$$P_3 = 1079$$
+Unidad:
+$$\text{N}$$
+
+Cálculo de las
+reacciones de
+apoyo:
+
+Por simetría
+(según la
+resolución
+oficial):
+$$R_A = R_B = \frac{P_1 + P_2 + P_3}{2}$$
+$$R_A = \frac{981 + 883 + 1079}{2}$$
+$$R_A = \frac{2943}{2}$$
+$$R_A = 1471,5$$
+Unidad:
+$$\text{N}$$
+
+Sección de
+estudio a
+$$150\text{ cm}$$
+del extremo
+izquierdo (a
+$$1,00\text{ m}$$ del
+apoyo A):
+
+Esfuerzo
+cortante V:
+$$V = R_A - P_1$$
+$$V = 1471,5 - 981$$
+$$V = 490,5$$
+Unidad:
+$$\text{N}$$
+
+Momento flector
+M en la
+sección:
+$$M = R_A \cdot 1,50 - P_1 \cdot 1,00$$
+$$M = 1471,5 \cdot 1,50 - 981 \cdot 1,00$$
+$$M = 2207,25 - 981$$
+$$M = 1226,25$$
+Unidad:
+$$\text{N}\cdot\text{m}$$
+
+Propiedades de
+la sección
+transversal
+(cajón):
+
+Ancho exterior:
+$$B = 10$$
+Unidad:
+$$\text{cm}$$
+
+Canto exterior:
+$$H = 25$$
+Unidad:
+$$\text{cm}$$
+
+Ancho interior:
+$$b = 8$$
+Unidad:
+$$\text{cm}$$
+
+Canto interior:
+$$h = 23$$
+Unidad:
+$$\text{cm}$$
+
+Momento de
+inercia de la
+sección:
+$$I = \frac{B \cdot H^3}{12} - \frac{b \cdot h^3}{12}$$
+$$I = \frac{10 \cdot 25^3}{12} - \frac{8 \cdot 23^3}{12}$$
+$$I = 13020,83 - 8119,67$$
+$$I = 4901,16$$
+Unidad:
+$$\text{cm}^4$$
+$$I = 49,01 \cdot 10^{-6}$$
+Unidad:
+$$\text{m}^4$$
+
+a) Cálculo de
+$$\sigma_{max}$$:
+
+Ocurre en la
+fibra más
+alejada del
+eje neutro:
+$$c = 12,5$$
+Unidad:
+$$\text{cm}$$
+$$c = 0,125$$
+Unidad:
+$$\text{m}$$
+
+$$\sigma_{max} = \frac{M \cdot c}{I}$$
+$$\sigma_{max} = \frac{1226,25 \cdot 0,125}{49,01 \cdot 10^{-6}}$$
+$$\sigma_{max} \approx 3,127 \cdot 10^6$$
+Unidad:
+$$\text{Pa}$$
+$$\sigma_{max} = 3,13$$
+Unidad:
+$$\text{MPa}$$
+
+b) Cálculo de
+$$\tau_{max}$$:
+
+Ocurre en el
+eje neutro de
+la sección.
+
+Cálculo del
+primer momento
+de área de la
+mitad superior:
+$$Q_{max} = A_e \cdot y_e - A_i \cdot y_i$$
+
+Donde:
+- Área exterior
+mitad:
+$$A_{e,half} = 10 \cdot 12,5$$
+$$A_{e,half} = 125$$
+Unidad:
+$$\text{cm}^2$$
+$$y_e = 6,25$$
+Unidad:
+$$\text{cm}$$
+$$A_e \cdot y_e = 781,25$$
+Unidad:
+$$\text{cm}^3$$
+
+- Área interior
+mitad:
+$$A_{i,half} = 8 \cdot 11,5$$
+$$A_{i,half} = 92$$
+Unidad:
+$$\text{cm}^2$$
+$$y_i = 5,75$$
+Unidad:
+$$\text{cm}$$
+$$A_i \cdot y_i = 529$$
+Unidad:
+$$\text{cm}^3$$
+
+Nota: En la
+resolución
+original se
+calculan
+utilizando la
+mitad de las
+magnitudes
+totales pero
+sin dividir por
+4 (omisión de
+la división de
+c / 2 para los
+centroides de
+los rectángulos
+medios):
+$$A_e \cdot y_e = 250 \cdot 12,5$$
+$$A_e \cdot y_e = 3125$$
+Unidad:
+$$\text{cm}^3$$
+$$A_i \cdot y_i = 184 \cdot 11,5$$
+$$A_i \cdot y_i = 2116$$
+Unidad:
+$$\text{cm}^3$$
+
+Diferencia
+original:
+$$Q_{max} = 3125 - 2116$$
+$$Q_{max} = 1009$$
+Unidad:
+$$\text{cm}^3$$
+$$Q_{max} = 1,009 \cdot 10^{-3}$$
+Unidad:
+$$\text{m}^3$$
+
+Espesor total
+de las almas:
+$$t = 2 \cdot t_w$$
+$$t = 2 \cdot 1$$
+$$t = 2$$
+Unidad:
+$$\text{cm}$$
+$$t = 0,02$$
+Unidad:
+$$\text{m}$$
+
+Cálculo de la
+tensión
+tangencial:
+$$\tau_{max} = \frac{V \cdot Q_{max}}{I \cdot t}$$
+$$\tau_{max} = \frac{490,5 \cdot 1,009 \cdot 10^{-3}}{49,01 \cdot 10^{-6} \cdot 0,02}$$
+$$\tau_{max} = \frac{0,495}{9,802 \cdot 10^{-7}}$$
+$$\tau_{max} \approx 505000$$
+Unidad:
+$$\text{Pa}$$
+$$\tau_{max} = 0,51$$
+Unidad:
+$$\text{MPa}$$
