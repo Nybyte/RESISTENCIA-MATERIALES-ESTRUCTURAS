@@ -1,0 +1,818 @@
+# Esfuerzo
+# Axil -
+# Ejercicios
+
+---
+
+## Índice
+* [Problema 1](#problema-1)
+* [Problema 2](#problema-2)
+* [Problema 3](#problema-3)
+* [Problema 4](#problema-4)
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcription:
+Problema 1.
+Un cable de
+acero con 30 m
+de largo
+cuelga de un
+punto de apoyo
+y sostiene un
+peso de 900 N
+en su extremo
+inferior.
+Diámetro del
+cable = 6mm.
+Peso específico
+acero:
+7850 kp/m3.
+Calcule la
+máxima tensión
+en el cable
+teniendo en
+cuenta el peso
+propio del
+cable.
+Cotas en m
+$\emptyset 0.006$
+30
+900 N
+
+**Descripción
+gráfica:**
+Cable vertical
+de 30 m de
+longitud y
+diámetro de
+6 mm.
+Cuelga de una
+placa de apoyo
+cuadrada en
+el extremo
+superior.
+Sostiene un
+peso cilíndrico
+de 900 N en
+su extremo
+inferior.
+
+### Solución Paso a Paso
+
+Datos del
+problema:
+
+Diámetro del
+cable:
+$$D = 0,006$$
+Unidad:
+$$\text{m}$$
+
+Longitud del
+cable:
+$$L = 30$$
+Unidad:
+$$\text{m}$$
+
+Carga en el
+extremo
+inferior:
+$$P = 900$$
+Unidad:
+$$\text{N}$$
+
+Peso específico
+del acero:
+$$\gamma_k = 7850$$
+Unidad:
+$$\text{kp/m}^3$$
+
+Conversión de
+unidades a
+Newtons:
+$$\gamma = 7850 \cdot 9,81$$
+$$\gamma = 77008,5$$
+Unidad:
+$$\text{N/m}^3$$
+
+Cálculo del
+área de la
+sección del
+cable:
+$$A = \frac{\pi \cdot D^2}{4}$$
+$$A = \frac{\pi \cdot 0,006^2}{4}$$
+$$A \approx 2,827 \cdot 10^{-5}$$
+Unidad:
+$$\text{m}^2$$
+
+Volumen total
+del cable:
+$$V = A \cdot L$$
+$$V = 2,827 \cdot 10^{-5} \cdot 30$$
+$$V \approx 8,482 \cdot 10^{-4}$$
+Unidad:
+$$\text{m}^3$$
+
+Peso propio
+del cable:
+$$W_c = V \cdot \gamma$$
+$$W_c = 8,482 \cdot 10^{-4} \cdot 77008,5$$
+$$W_c = 65,32$$
+Unidad:
+$$\text{N}$$
+
+Cálculo de la
+fuerza máxima
+axial (ocurre
+en el apoyo
+superior):
+$$F_{max} = P + W_c$$
+$$F_{max} = 900 + 65,32$$
+$$F_{max} = 965,32$$
+Unidad:
+$$\text{N}$$
+
+Esfuerzo
+máximo:
+$$\sigma_{max} = \frac{F_{max}}{A}$$
+$$\sigma_{max} = \frac{965,32}{2,827 \cdot 10^{-5}}$$
+$$\sigma_{max} \approx 34,14 \cdot 10^6$$
+Unidad:
+$$\text{Pa}$$
+$$\sigma_{max} = 34,14$$
+Unidad:
+$$\text{MPa}$$
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcription:
+Problema 2. Una
+grúa de carga,
+compuesta por
+un larguero de
+acero ABC
+infinitamente
+rígido, es
+sostenido por
+un cable BD, y
+sujeta una
+carga P. Se
+pide:
+a) Tensión
+normal en el
+cable.
+b) Alargamiento
+longitudinal y
+total del
+cable.
+c) ¿Cuánto
+desciende el
+punto C?
+Datos:
+Área del cable
+= 4,81 cm²
+E =210000 MPa
+P=32 kN
+Cotas en
+metros.
+1,60
+A
+3,00
+B
+1,50
+C
+P
+D
+
+**Descripción
+gráfica:**
+Grúa de carga
+con barra
+rígida
+horizontal ABC
+articulada en
+su extremo A
+a un muro.
+Un cable
+inclinado BD
+conecta el nudo
+B con el
+punto D
+en el muro,
+situado a
+1,60 m por
+encima de A.
+La distancia AB
+es de 3,00 m y
+BC de 1,50 m.
+En el extremo C
+se aplica una
+fuerza vertical
+descendente P
+de 32 kN.
+
+### Solución Paso a Paso
+
+Datos:
+
+Carga:
+$$P = 32$$
+Unidad:
+$$\text{kN}$$
+$$P = 32000$$
+Unidad:
+$$\text{N}$$
+
+Área de la
+sección del
+cable:
+$$A = 4,81$$
+Unidad:
+$$\text{cm}^2$$
+$$A = 481$$
+Unidad:
+$$\text{mm}^2$$
+
+Módulo de
+elasticidad:
+$$E = 210000$$
+Unidad:
+$$\text{MPa}$$
+$$E = 210000$$
+Unidad:
+$$\text{N/mm}^2$$
+
+Geometría del
+cable BD:
+
+Componente X:
+$$\Delta x = 3,00$$
+Unidad:
+$$\text{m}$$
+
+Componente Y:
+$$\Delta y = 1,60$$
+Unidad:
+$$\text{m}$$
+
+Longitud del
+cable:
+$$L = \sqrt{3,00^2 + 1,60^2}$$
+$$L = 3,40$$
+Unidad:
+$$\text{m}$$
+$$L = 3400$$
+Unidad:
+$$\text{mm}$$
+
+Ángulo del
+cable con la
+horizontal:
+$$\sin(\alpha) = \frac{1,60}{3,40}$$
+$$\sin(\alpha) \approx 0,4706$$
+
+Equilibrio de
+momentos en el
+apoyo fijo A:
+$$\Sigma M_A = 0$$
+$$T \cdot \sin(\alpha) \cdot 3,00 - P \cdot 4,50 = 0$$
+
+Sustituyendo:
+$$T \cdot 0,4706 \cdot 3,00 = 32 \cdot 4,50$$
+$$1,4118 \cdot T = 144$$
+$$T = 102,0$$
+Unidad:
+$$\text{kN}$$
+$$T = 102000$$
+Unidad:
+$$\text{N}$$
+
+a) Tensión
+normal en el
+cable BD:
+$$\sigma = \frac{T}{A}$$
+$$\sigma = \frac{102000}{481}$$
+$$\sigma = 212,06$$
+Unidad:
+$$\text{MPa}$$
+
+b) Alargamiento
+del cable BD:
+$$\delta = \frac{T \cdot L}{A \cdot E}$$
+
+Sustituyendo
+valores:
+$$\delta = \frac{102000 \cdot 3400}{481 \cdot 210000}$$
+$$\delta = \frac{346,8 \cdot 10^6}{101,01 \cdot 10^6}$$
+$$\delta = 3,433$$
+Unidad:
+$$\text{mm}$$
+
+c) Descenso de
+los puntos B y
+C por giros:
+
+Por pequeños
+giros de la
+barra rígida
+ABC, el
+descenso
+vertical en B
+es:
+$$\delta_B = \frac{\delta}{\sin(\alpha)}$$
+$$\delta_B = \frac{3,433}{0,4706}$$
+$$\delta_B = 7,295$$
+Unidad:
+$$\text{mm}$$
+
+Por relación de
+triángulos:
+$$\frac{\delta_C}{4,50} = \frac{\delta_B}{3,00}$$
+$$\delta_C = 1,50 \cdot \delta_B$$
+$$\delta_C = 1,50 \cdot 7,295$$
+$$\delta_C = 10,94$$
+Unidad:
+$$\text{mm}$$
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcription:
+Problema 3.
+Tenemos un
+cilindro de
+aluminio de
+diámetro 10 mm
+y altura
+350 cm.
+Rodeándolo
+exteriormente
+existe un
+cilindro de
+cobre de 15 mm
+de diámetro que
+por error se ha
+construido de
+349,8 cm. En la
+cabeza de los
+cilindros se ha
+dispuesto una
+placa de acero
+para repartir
+adecuadamente
+la carga.
+Se pide:
+a) Carga
+necesaria para
+que la placa de
+cabeza toque
+el cobre.
+b) Reparto de
+cargas entre
+ambos
+materiales
+cuando P=15 kN.
+c) Tensiones en
+ambos
+materiales
+para esa carga.
+d) Carga máxima
+posible.
+Datos del
+Aluminio (1):
+D_al = 10 mm
+L_al = 3500 mm
+A_al = 78.54 mm²
+E_al = 70000 MPa
+sig_al,adm = 110 MPa
+Datos del
+Cobre (2):
+D_ext = 15 mm
+L_cu = 3498 mm
+A_cu = 98.17 mm²
+E_cu = 122625 MPa
+sig_cu,adm = 117.72 MPa
+1 Kp = 9.81 N
+
+**Descripción
+gráfica:**
+Dos cilindros
+concéntricos:
+uno interior
+de aluminio,
+sólido, con
+diámetro de
+10 mm y
+altura de
+350 cm;
+y otro
+exterior de
+cobre, hueco,
+con diámetro
+ext. de
+15 mm y
+altura de
+349,8 cm.
+En la cabeza,
+una placa de
+reparto de
+acero apoya
+sobre el
+aluminio,
+dejando una
+holgura de
+2 mm respecto
+al cobre.
+
+### Solución Paso a Paso
+
+Datos del
+Aluminio (1):
+$$D_{al} = 10$$
+Unidad:
+$$\text{mm}$$
+$$L_{al} = 3500$$
+Unidad:
+$$\text{mm}$$
+$$A_{al} = 78,54$$
+Unidad:
+$$\text{mm}^2$$
+$$E_{al} = 70000$$
+Unidad:
+$$\text{MPa}$$
+$$\sigma_{al,adm} = 110$$
+Unidad:
+$$\text{MPa}$$
+
+Datos del
+Cobre (2):
+$$D_{ext} = 15$$
+Unidad:
+$$\text{mm}$$
+$$L_{cu} = 3498$$
+Unidad:
+$$\text{mm}$$
+$$A_{cu} = 98,17$$
+Unidad:
+$$\text{mm}^2$$
+$$E_{cu} = 122625$$
+Unidad:
+$$\text{MPa}$$
+$$\sigma_{cu,adm} = 117,72$$
+Unidad:
+$$\text{MPa}$$
+
+Conversión de
+fuerzas:
+$$1\text{ Kp} = 9,81\text{ N}$$
+
+a) Carga para
+tocar el cobre:
+
+Holgura:
+$$\delta = 3500 - 3498$$
+$$\delta = 2$$
+Unidad:
+$$\text{mm}$$
+
+Fuerza de
+cierre:
+$$P_a = \frac{\delta \cdot A_{al} \cdot E_{al}}{L_{al}}$$
+$$P_a = \frac{2 \cdot 78,54 \cdot 70000}{3500}$$
+$$P_a = 3141,6$$
+Unidad:
+$$\text{N}$$
+$$P_a = 3,14$$
+Unidad:
+$$\text{kN}$$
+
+b) Reparto de
+cargas a
+$$P = 15\text{ kN}$$:
+
+Carga sobrante:
+$$P_{ext} = 15000 - 3141,6$$
+$$P_{ext} = 11858,4$$
+Unidad:
+$$\text{N}$$
+
+Rigidez del
+aluminio:
+$$K_{al} = \frac{A_{al} \cdot E_{al}}{L_{al}}$$
+$$K_{al} = \frac{78,54 \cdot 70000}{3500}$$
+$$K_{al} = 1570,8$$
+Unidad:
+$$\text{N/mm}$$
+
+Rigidez del
+cobre:
+$$K_{cu} = \frac{A_{cu} \cdot E_{cu}}{L_{cu}}$$
+$$K_{cu} = \frac{98,17 \cdot 122625}{3498}$$
+$$K_{cu} = 3441,4$$
+Unidad:
+$$\text{N/mm}$$
+
+Acortamiento
+adicional:
+$$\delta_{ext} = \frac{P_{ext}}{K_{al} + K_{cu}}$$
+$$\delta_{ext} = \frac{11858,4}{1570,8 + 3441,4}$$
+$$\delta_{ext} = \frac{11858,4}{5012,2}$$
+$$\delta_{ext} = 2,366$$
+Unidad:
+$$\text{mm}$$
+
+Carga en el
+aluminio:
+$$P_{al} = P_a + K_{al} \cdot \delta_{ext}$$
+$$P_{al} = 3141,6 + 1570,8 \cdot 2,366$$
+$$P_{al} = 3141,6 + 3716,3$$
+$$P_{al} = 6857,9$$
+Unidad:
+$$\text{N}$$
+$$P_{al} = 6,86$$
+Unidad:
+$$\text{kN}$$
+
+Carga en el
+cobre:
+$$P_{cu} = K_{cu} \cdot \delta_{ext}$$
+$$P_{cu} = 3441,4 \cdot 2,366$$
+$$P_{cu} = 8142,1$$
+Unidad:
+$$\text{N}$$
+$$P_{cu} = 8,14$$
+Unidad:
+$$\text{kN}$$
+
+c) Tensiones en
+ambos
+materiales:
+
+Tensión en el
+aluminio:
+$$\sigma_{al} = \frac{P_{al}}{A_{al}}$$
+$$\sigma_{al} = \frac{6857,9}{78,54}$$
+$$\sigma_{al} = 87,32$$
+Unidad:
+$$\text{MPa}$$
+
+Tensión en el
+cobre:
+$$\sigma_{cu} = \frac{P_{cu}}{A_{cu}}$$
+$$\sigma_{cu} = \frac{8142,1}{98,17}$$
+$$\sigma_{cu} = 82,94$$
+Unidad:
+$$\text{MPa}$$
+
+d) Carga máxima
+admisible:
+
+Límite en el
+aluminio:
+$$P_{al,max} = \sigma_{al,adm} \cdot A_{al}$$
+$$P_{al,max} = 110 \cdot 78,54$$
+$$P_{al,max} = 8639,4$$
+Unidad:
+$$\text{N}$$
+
+Deformación del
+aluminio en su
+límite:
+$$\delta_{lim,al} = \frac{8639,4 - 3141,6}{1570,8}$$
+$$\delta_{lim,al} = 3,50$$
+Unidad:
+$$\text{mm}$$
+
+Límite en el
+cobre:
+$$P_{cu,max} = \sigma_{cu,adm} \cdot A_{cu}$$
+$$P_{cu,max} = 117,72 \cdot 98,17$$
+$$P_{cu,max} = 11556,6$$
+Unidad:
+$$\text{N}$$
+
+Deformación del
+cobre en su
+límite:
+$$\delta_{lim,cu} = \frac{11556,6}{3441,4}$$
+$$\delta_{lim,cu} = 3,358$$
+Unidad:
+$$\text{mm}$$
+
+El cobre
+fallará
+primero
+debido a
+su menor
+deformación
+admisible:
+$$\delta_{lim,cu} < \delta_{lim,al}$$
+
+Acortamiento
+máximo del
+sistema:
+$$\delta_{max} = 3,358$$
+Unidad:
+$$\text{mm}$$
+
+Carga total
+máxima posible:
+$$P_{max} = P_a + (K_{al} + K_{cu}) \cdot \delta_{max}$$
+$$P_{max} = 3141,6 + 5012,2 \cdot 3,358$$
+$$P_{max} = 19972,6$$
+Unidad:
+$$\text{N}$$
+$$P_{max} = 19,97$$
+Unidad:
+$$\text{kN}$$
+
+---
+
+## Problema 4
+
+### Enunciado
+Transcription:
+Tenemos una
+barra CDE
+infinitamente
+larga que
+soporta en su
+extremo una
+carga puntual
+de 3t. Está
+sostenida por
+dos barras
+cuya sección
+se indica en el
+dibujo. Todas
+las cotas están
+en metros.
+E = 70 GPa
+a)Desplazamiento
+vertical de los
+puntos C, D y E
+b) Giro de la
+barra CDE
+Area C =
+6,31 x 10^-4 m2
+Area D =
+7,73 x 10^-4 m2
+4,00 m
+2,00 m
+3,00 m
+3 T
+
+**Descripción
+gráfica:**
+Barra rígida
+horizontal CDE.
+Sostenida por
+dos barras
+verticales:
+Una en el
+extremo izq. C,
+con área de:
+$$6,31 \cdot 10^{-4}$$
+Unidad:
+$$\text{m}^2$$
+y otra en el
+punto D, a
+2,00 m de C,
+con área de:
+$$7,73 \cdot 10^{-4}$$
+Unidad:
+$$\text{m}^2$$
+Ambas tienen
+longitud de
+4,00 m.
+La barra
+horizontal
+se prolonga
+3,00 m desde D
+hasta el
+extremo E,
+donde se aplica
+una carga
+puntual de
+3 t (30 kN)
+hacia abajo.
+
+### Solución Paso a Paso
+
+Datos:
+
+Carga puntual:
+$$P = 30$$
+Unidad:
+$$\text{kN}$$
+$$P = 30000$$
+Unidad:
+$$\text{N}$$
+
+Módulo de
+elasticidad:
+$$E = 70 \cdot 10^9$$
+Unidad:
+$$\text{Pa}$$
+
+Longitud de
+las barras:
+$$L = 4,00$$
+Unidad:
+$$\text{m}$$
+
+Área de la
+barra C:
+$$A_C = 6,31 \cdot 10^{-4}$$
+Unidad:
+$$\text{m}^2$$
+
+Área de la
+barra D:
+$$A_D = 7,73 \cdot 10^{-4}$$
+Unidad:
+$$\text{m}^2$$
+
+Equilibrio de
+momentos en C:
+$$\Sigma M_C = 0$$
+$$N_D \cdot 2,00 - P \cdot 5,00 = 0$$
+$$2,00 \cdot N_D = 30 \cdot 5,00$$
+$$2,00 \cdot N_D = 150$$
+$$N_D = 75$$
+Unidad:
+$$\text{kN}$$
+$$N_D = 75000$$
+Unidad:
+$$\text{N}$$
+
+Equilibrio de
+fuerzas
+verticales:
+$$\Sigma F_y = 0$$
+$$N_C + N_D - P = 0$$
+$$N_C + 75 - 30 = 0$$
+$$N_C = -45$$
+Unidad:
+$$\text{kN}$$
+$$N_C = -45000$$
+Unidad:
+$$\text{N}$$
+(El signo menos
+indica que la
+barra C está a
+compresión).
+
+Desplazamiento
+vertical de C:
+$$\delta_C = \frac{N_C \cdot L}{E \cdot A_C}$$
+$$\delta_C = \frac{-45000 \cdot 4,00}{70 \cdot 10^9 \cdot 6,31 \cdot 10^{-4}}$$
+$$\delta_C \approx -0,00407$$
+Unidad:
+$$\text{m}$$
+$$\delta_C = -4,07$$
+Unidad:
+$$\text{mm}$$
+
+Desplazamiento
+vertical de D:
+$$\delta_D = \frac{N_D \cdot L}{E \cdot A_D}$$
+$$\delta_D = \frac{75000 \cdot 4,00}{70 \cdot 10^9 \cdot 7,73 \cdot 10^{-4}}$$
+$$\delta_D \approx 0,00554$$
+Unidad:
+$$\text{m}$$
+$$\delta_D = 5,54$$
+Unidad:
+$$\text{mm}$$
+
+Giro de la
+barra rígida
+CDE (en rad):
+$$\theta = \frac{\delta_D - \delta_C}{L_{CD}}$$
+
+Sustituyendo
+valores:
+$$\theta = \frac{5,54 - (-4,07)}{2000}$$
+$$\theta = \frac{9,61}{2000}$$
+$$\theta \approx 0,0048$$
+Unidad:
+$$\text{rad}$$
+
+Desplazamiento
+vertical del
+extremo E:
+$$\delta_E = \delta_D + \theta \cdot L_{DE}$$
+$$\delta_E = 5,54 + 0,0048 \cdot 3000$$
+$$\delta_E = 5,54 + 14,40$$
+$$\delta_E = 19,94$$
+Unidad:
+$$\text{mm}$$
