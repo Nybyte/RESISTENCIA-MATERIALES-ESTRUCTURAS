@@ -1,0 +1,1496 @@
+# Estructuras
+# de Barras
+# Planas con
+# Nudos
+# Articulados
+# - Ejercicios
+
+---
+
+## Índice
+* [Problema 1](#problema-1)
+* [Problema 2](#problema-2)
+* [Problema 3](#problema-3)
+* [Problema 4](#problema-4)
+* [Problema 5](#problema-5)
+* [Problema 6](#problema-6)
+* [Problema 7](#problema-7)
+* [Problema 8](#problema-8)
+* [Problema 9](#problema-9)
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcription:
+Problema 1.
+Obtener los
+esfuerzos en las
+barras A, B y C.
+Solución:
+NA = -230,22 kN;
+NB = -231,07 kN;
+NC = 430,0 kN.
+
+**Descripción
+gráfica:**
+Estructura de
+cercha plana
+con pendiente.
+Tiene cuatro
+tramos de
+2,5 m de ancho.
+El apoyo
+izquierdo es
+articulado
+fijo y el
+derecho es
+móvil.
+Se aplican
+cargas
+verticales
+descendentes
+en los nudos
+superiores:
+90 kN,
+110 kN,
+120 kN y
+70 kN.
+
+### Solución Paso a Paso
+
+Geometría de
+la cercha:
+Ancho total:
+$$L = 10$$
+Unidad:
+$$\text{m}$$
+
+Altura máxima:
+$$H = 2,50$$
+Unidad:
+$$\text{m}$$
+
+Ancho de cada
+tramo:
+$$b = 2,50$$
+Unidad:
+$$\text{m}$$
+
+Pendiente del
+cordón sup.:
+$$\tan(\alpha) = 0,25$$
+$$\alpha = 14,036^\circ$$
+
+Ángulo de la
+diagonal B:
+$$\tan(\beta) = 0,5$$
+$$\beta = 26,565^\circ$$
+
+Proyecciones:
+$$\cos(\alpha) = 0,9701$$
+$$\sin(\alpha) = 0,2425$$
+$$\cos(\beta) = 0,8944$$
+$$\sin(\beta) = 0,4472$$
+
+Reacciones de
+apoyos:
+
+Apoyo izquierdo
+A (fijo) y
+derecho B
+(móvil).
+
+Suma de
+momentos en A:
+$$\Sigma M_A = 0$$
+$$R_{By} \cdot 10 - 90 \cdot 2,5 - 110 \cdot 5 - 120 \cdot 7,5 - 70 \cdot 10 = 0$$
+$$R_{By} \cdot 10 = 2375$$
+$$R_{By} = 237,5$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+vertical:
+$$\Sigma F_y = 0$$
+$$R_{Ay} + R_{By} = 90 + 110 + 120 + 70$$
+$$R_{Ay} = 390 - 237,5$$
+$$R_{Ay} = 152,5$$
+Unidad:
+$$\text{kN}$$
+
+Método de las
+secciones:
+
+Realizamos un
+corte vertical
+por el tramo 3,
+que intersecta
+a las barras
+A, B y C.
+
+Esfuerzo en
+barra C:
+
+Tomamos
+momentos en el
+nudo superior
+de la barra
+vertical de la
+sección:
+para x = 5:
+$$\Sigma M_6 = 0$$
+$$R_{Ay} \cdot 5 - 90 \cdot 2,5 - N_C \cdot 1,25 = 0$$
+$$152,5 \cdot 5 - 225 - 1,25 \cdot N_C = 0$$
+$$537,5 - 1,25 \cdot N_C = 0$$
+$$N_C = 430,0$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+tracción).
+
+Esfuerzo en
+barra A:
+
+Tomamos
+momentos en el
+nudo inferior
+(x = 7,5) de la
+parte derecha:
+$$\Sigma M_3 = 0$$
+$$(R_{By} - 70) \cdot 2,5 + N_A \cdot \cos(\alpha) \cdot 1,875 = 0$$
+$$167,5 \cdot 2,5 + 1,819 \cdot N_A = 0$$
+$$418,75 + 1,819 \cdot N_A = 0$$
+$$N_A = -230,22$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+Esfuerzo en
+barra B:
+
+Equilibrio
+vertical de
+la parte
+derecha:
+$$\Sigma F_y = 0$$
+$$R_{By} - 70 - 120 - N_A \cdot \sin(\alpha) + N_B \cdot \sin(\beta) = 0$$
+$$47,5 - (-230,22 \cdot 0,2425) + 0,4472 \cdot N_B = 0$$
+$$103,33 + 0,4472 \cdot N_B = 0$$
+$$N_B = -231,07$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcription:
+Problema 2.
+Obtener las
+solicitaciones
+de la viga de
+la figura.
+Dibujar los
+diagramas
+indicando
+valores y
+criterios de
+signo:
+10 kN/m
+1 tonelada
+60 grados
+5.00 m
+2.00 m
+
+**Descripción
+gráfica:**
+Viga con un
+vano apoyado
+de 5,00 m y
+un voladizo
+de 2,00 m en
+el extremo
+derecho.
+El vano de
+5,00 m soporta
+una carga
+distribuida
+de 10 kN/m.
+El extremo
+libre del
+voladizo
+tiene una
+carga puntual
+de 10 kN (1 t)
+inclinada a
+60 grados,
+que empuja
+hacia abajo
+y la izq.
+
+### Solución Paso a Paso
+
+Cálculo de las
+fuerzas:
+Carga puntual:
+$$P = 10$$
+Unidad:
+$$\text{kN}$$
+
+Componente
+horizontal:
+$$P_x = P \cdot \cos(60^\circ)$$
+$$P_x = 10 \cdot 0,5$$
+$$P_x = 5$$
+Unidad:
+$$\text{kN}$$
+
+Componente
+vertical:
+$$P_y = P \cdot \sin(60^\circ)$$
+$$P_y = 10 \cdot 0,866$$
+$$P_y = 8,66$$
+Unidad:
+$$\text{kN}$$
+
+Cálculo de las
+reacciones:
+
+Apoyo izquierdo
+A (fijo) y
+apoyo derecho
+B (móvil).
+
+Suma de
+momentos en B:
+$$\Sigma M_B = 0$$
+$$-R_A \cdot 5 + q \cdot 5 \cdot 2,5 - P_y \cdot 2 = 0$$
+$$-5 \cdot R_A + 10 \cdot 5 \cdot 2,5 - 8,66 \cdot 2 = 0$$
+$$-5 \cdot R_A + 125 - 17,32 = 0$$
+$$R_A = 21,54$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+vertical:
+$$\Sigma F_y = 0$$
+$$R_A + R_B - q \cdot 5 - P_y = 0$$
+$$21,54 + R_B - 50 - 8,66 = 0$$
+$$R_B = 37,12$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+horizontal:
+$$\Sigma F_x = 0$$
+$$R_{Ax} - P_x = 0$$
+$$R_{Ax} = 5$$
+Unidad:
+$$\text{kN}$$
+
+Esfuerzo axial:
+$$N$$
+Es constante
+de tracción
+debido a:
+$$N = 5$$
+Unidad:
+$$\text{kN}$$
+
+Esfuerzo
+cortante:
+$$V$$
+
+En el apoyo A:
+$$V_A = 21,54$$
+Unidad:
+$$\text{kN}$$
+
+Punto de corte
+nulo en tramo
+AB:
+$$x_0 = \frac{R_A}{q}$$
+$$x_0 = \frac{21,54}{10}$$
+$$x_0 = 2,154$$
+Unidad:
+$$\text{m}$$
+
+Corte en B por
+la izquierda:
+$$V_{B-} = R_A - q \cdot 5$$
+$$V_{B-} = 21,54 - 50$$
+$$V_{B-} = -28,46$$
+Unidad:
+$$\text{kN}$$
+
+Corte en B por
+la derecha:
+$$V_{B+} = P_y$$
+$$V_{B+} = 8,66$$
+Unidad:
+$$\text{kN}$$
+
+Momento
+flector:
+$$M$$
+
+Máximo en
+$$x_0 = 2,154$$
+Unidad:
+$$\text{m}$$
+$$M_{max} = R_A \cdot x_0 - q \cdot \frac{x_0^2}{2}$$
+$$M_{max} = 21,54 \cdot 2,154 - 10 \cdot \frac{2,154^2}{2}$$
+$$M_{max} = 23,20$$
+Unidad:
+$$\text{kN}\cdot\text{m}$$
+
+Momento en B:
+$$M_B = -P_y \cdot 2$$
+$$M_B = -8,66 \cdot 2$$
+$$M_B = -17,32$$
+Unidad:
+$$\text{kN}\cdot\text{m}$$
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcription:
+Problema 3.
+Obtener los
+esfuerzos en las
+barras 1, 2 y 3.
+Solución:
+N1 = -1,55 kN;
+N2 = -10,32 kN;
+N3 = 20,51 kN.
+
+**Descripción
+gráfica:**
+Cercha de
+cubierta con
+pendiente no
+simétrica.
+Tiene cuatro
+tramos de
+3,00 m.
+El punto más
+alto está en
+el nudo a
+9,00 m, con
+una altura de
+2,50 m.
+Soporta tres
+cargas de
+5 kN
+verticales y
+una de 10 kN
+horizontal en
+el pico hacia
+la derecha.
+
+### Solución Paso a Paso
+
+Geometría de
+la cercha:
+Ancho total:
+$$L = 12$$
+Unidad:
+$$\text{m}$$
+
+Ancho de cada
+tramo:
+$$b = 3,00$$
+Unidad:
+$$\text{m}$$
+
+Altura máxima
+(en x = 9):
+$$H = 2,50$$
+Unidad:
+$$\text{m}$$
+
+Pendiente del
+cordón sup.
+izquierdo
+(hasta x = 9):
+$$\tan(\alpha) = 0,2778$$
+$$\alpha = 15,524^\circ$$
+
+Pendiente de
+la diagonal 2:
+$$\tan(\beta) = 0,5556$$
+$$\beta = 29,055^\circ$$
+
+Proyecciones
+de la barra 1:
+$$\cos(\alpha) = 0,9635$$
+$$\sin(\alpha) = 0,2676$$
+
+Proyecciones
+de la barra 2:
+$$\cos(\beta) = 0,8742$$
+$$\sin(\beta) = 0,4856$$
+
+Reacciones de
+apoyos:
+
+Apoyo izquierdo
+A (fijo) y
+derecho B
+(móvil).
+
+Suma de
+momentos en A:
+$$\Sigma M_A = 0$$
+$$12 \cdot B_y - 5 \cdot 3 - 5 \cdot 6 - 5 \cdot 9 - 10 \cdot 2,5 = 0$$
+$$12 \cdot B_y - 15 - 30 - 45 - 25 = 0$$
+$$12 \cdot B_y = 115$$
+$$B_y = 9,583$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+vertical:
+$$\Sigma F_y = 0$$
+$$R_{Ay} + B_y = 5 + 5 + 5$$
+$$R_{Ay} = 15 - 9,583$$
+$$R_{Ay} = 5,417$$
+Unidad:
+$$\text{kN}$$
+
+Método de las
+secciones:
+
+Hacemos un
+corte vertical
+en el tramo
+entre 6 y 9
+metros:
+(tramo 3)
+y trabajamos
+con el lado
+derecho.
+
+Cálculo de N3:
+
+Tomamos
+momentos en el
+nudo superior G
+(en x = 6,
+y = 1,667):
+$$\Sigma M_G = 0$$
+$$-1,667 \cdot N_3 + 6 \cdot B_y - 3 \cdot 5 - 0,833 \cdot 10 = 0$$
+$$-1,667 \cdot N_3 + 57,5 - 15 - 8,33 = 0$$
+$$-1,667 \cdot N_3 + 34,17 = 0$$
+$$N_3 = 20,51$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+tracción).
+
+Cálculo de N1:
+
+Tomamos
+momentos en el
+nudo inferior F
+(en x = 9,
+y = 0):
+$$\Sigma M_F = 0$$
+
+Brazo a la
+barra 1:
+$$d_1 = 2,409$$
+Unidad:
+$$\text{m}$$
+$$d_1 \cdot N_1 + 3 \cdot B_y - 2,5 \cdot 10 = 0$$
+$$2,409 \cdot N_1 + 28,75 - 25 = 0$$
+$$2,409 \cdot N_1 + 3,75 = 0$$
+$$N_1 = -1,55$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+Cálculo de N2:
+
+Equilibrio de
+fuerzas
+verticales:
+$$\Sigma F_y = 0$$
+$$B_y - 5 + N_{1y} + N_{2y} = 0$$
+
+Componente de
+N1 en Y:
+$$N_{1y} = -N_1 \cdot \sin(\alpha)$$
+$$N_{1y} = -(-1,55) \cdot 0,2676$$
+$$N_{1y} = 0,417$$
+Unidad:
+$$\text{kN}$$
+
+Sustituyendo:
+$$9,583 - 5 + 0,417 + N_{2y} = 0$$
+$$5,00 + N_{2y} = 0$$
+$$N_{2y} = -5,00$$
+Unidad:
+$$\text{kN}$$
+
+Despejando N2:
+$$N_2 = \frac{N_{2y}}{\sin(\beta)}$$
+$$N_2 = \frac{-5,00}{0,4856}$$
+$$N_2 = -10,30$$
+Unidad:
+$$\text{kN}$$
+$$N_2 \approx -10,32$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+---
+
+## Problema 4
+
+### Enunciado
+Transcription:
+Problema 4.
+Obtener los
+esfuerzos en las
+barras A, B y C.
+Solución:
+NA = -137,78 kN;
+NB = 11,02 kN;
+NC = 131,67 kN.
+
+**Descripción
+gráfica:**
+Cercha tipo
+Warren de
+cordones
+paralelos.
+Longitud total
+de 6,00 m y
+altura de
+1,50 m.
+Tiene cargas
+verticales de
+50 kN, 80 kN,
+30 kN, 20 kN y
+40 kN en los
+nudos, y una
+carga horizontal
+de 10 kN en el
+extremo superior
+izquierdo.
+
+### Solución Paso a Paso
+
+Geometría de
+la cercha:
+Ancho total:
+$$L = 6$$
+Unidad:
+$$\text{m}$$
+
+Altura:
+$$H = 1,50$$
+Unidad:
+$$\text{m}$$
+
+Geometría
+de nudos:
+Nudos inf. en x:
+$$0, 2, 4, 6$$
+Unidad:
+$$\text{m}$$
+
+Nudos sup. en x:
+$$0, 1, 3, 5, 6$$
+Unidad:
+$$\text{m}$$
+
+Inclinación de
+la diagonal B:
+$$\Delta x = 1$$
+$$\Delta y = 1,5$$
+$$L_B = \sqrt{1^2 + 1,5^2}$$
+$$L_B = 1,803$$
+Unidad:
+$$\text{m}$$
+$$\sin(\alpha) = \frac{1,5}{1,803}$$
+$$\sin(\alpha) = 0,832$$
+
+Reacciones de
+apoyos:
+
+Apoyo izquierdo
+L0 (fijo) y
+derecho R0
+(móvil).
+
+Suma de
+momentos en L0:
+$$\Sigma M_{L0} = 0$$
+Momentos de
+cargas:
+$$-10 \cdot 1,5 - 50 \cdot 1 - 80 \cdot 2 - 30 \cdot 3 - 20 \cdot 4 - 40 \cdot 5 + 6 \cdot R_y = 0$$
+$$-15 - 50 - 160 - 90 - 80 - 200 + 6 \cdot R_y = 0$$
+$$-595 + 6 \cdot R_y = 0$$
+$$R_y = 99,17$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+vertical:
+$$\Sigma F_y = 0$$
+$$L_y + R_y = 50 + 80 + 30 + 20 + 40$$
+$$L_y = 220 - 99,17$$
+$$L_y = 120,83$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+horizontal:
+$$\Sigma F_x = 0$$
+$$L_x + 10 = 0$$
+$$L_x = -10$$
+Unidad:
+$$\text{kN}$$
+
+Método de las
+secciones:
+
+Realizamos un
+corte vertical
+en tramo 2:
+(x = 2,5)
+seccionando
+las barras A,
+B y C.
+Trabajamos con
+la parte
+izquierda.
+
+Cálculo de NA:
+
+Tomamos
+momentos en el
+nudo inferior
+B1 (x = 2,
+y = 0):
+$$\Sigma M_{B1} = 0$$
+$$-L_y \cdot 2 - L_x \cdot 0 - 10 \cdot 1,5 + 50 \cdot 1 - 1,5 \cdot N_A = 0$$
+$$-120,83 \cdot 2 - 15 + 50 - 1,5 \cdot N_A = 0$$
+$$-241,66 - 15 + 50 - 1,5 \cdot N_A = 0$$
+$$-206,66 - 1,5 \cdot N_A = 0$$
+$$N_A = -137,78$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+Cálculo de NB:
+
+Equilibrio de
+fuerzas
+verticales:
+$$\Sigma F_y = 0$$
+$$L_y - 50 - 80 + N_{By} = 0$$
+$$120,83 - 130 + N_{By} = 0$$
+$$N_{By} = 9,17$$
+Unidad:
+$$\text{kN}$$
+
+Esfuerzo real
+de la diagonal:
+$$N_B = \frac{N_{By}}{\sin(\alpha)}$$
+$$N_B = \frac{9,17}{0,832}$$
+$$N_B = 11,02$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+tracción).
+
+Cálculo de NC:
+
+Tomamos
+momentos en el
+nudo superior
+T2 (x = 3,
+y = 1,5):
+$$\Sigma M_{T2} = 0$$
+$$-L_y \cdot 3 - L_x \cdot 1,5 + 50 \cdot 2 + 80 \cdot 1 + 1,5 \cdot N_C = 0$$
+$$-120,83 \cdot 3 - 15 + 100 + 80 + 1,5 \cdot N_C = 0$$
+$$-362,5 - 15 + 180 + 1,5 \cdot N_C = 0$$
+$$-197,5 + 1,5 \cdot N_C = 0$$
+$$1,5 \cdot N_C = 197,5$$
+$$N_C = 131,67$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+tracción).
+
+---
+
+## Problema 5
+
+### Enunciado
+Transcription:
+Problema 5.
+Obtener los
+esfuerzos en las
+barras A, B y C.
+Solución:
+NA = -96,25 kN;
+NB = 65,62 kN;
+NC = 76,88 kN.
+
+**Descripción
+gráfica:**
+Cercha de
+cordones
+paralelos con
+cuatro tramos
+de 1,50 m de
+ancho y
+altura de
+2,00 m.
+Las diagonales
+están
+dispuestas de
+forma simétrica
+hacia el centro.
+Soporta cargas
+verticales
+descendentes y
+dos cargas
+horizontales
+de 10 kN y
+20 kN en los
+extremos
+superiores.
+
+### Solución Paso a Paso
+
+Geometría de
+la cercha:
+Ancho total:
+$$L = 6$$
+Unidad:
+$$\text{m}$$
+
+Altura:
+$$H = 2$$
+Unidad:
+$$\text{m}$$
+
+Ancho de cada
+tramo:
+$$b = 1,50$$
+Unidad:
+$$\text{m}$$
+(4 tramos)
+
+Inclinación de
+la diagonal B:
+$$\Delta x = 1,5$$
+$$\Delta y = 2$$
+$$L_B = \sqrt{1,5^2 + 2^2}$$
+$$L_B = 2,5$$
+Unidad:
+$$\text{m}$$
+$$\sin(\alpha) = \frac{2}{2,5}$$
+$$\sin(\alpha) = 0,8$$
+
+Reacciones de
+apoyos:
+
+Apoyo izquierdo
+L (fijo) y
+derecho B
+(móvil).
+
+Suma de
+momentos en L:
+$$\Sigma M_L = 0$$
+Momentos de
+cargas:
+$$-10 \cdot 2 - 20 \cdot 1,5 - 100 \cdot 3 - 50 \cdot 4,5 - 20 \cdot 6 - 20 \cdot 2 + 6 \cdot R_{By} = 0$$
+$$-20 - 30 - 300 - 225 - 120 - 40 + 6 \cdot R_{By} = 0$$
+$$-735 + 6 \cdot R_{By} = 0$$
+$$R_{By} = 122,5$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+vertical:
+$$\Sigma F_y = 0$$
+$$L_y + R_{By} = 10 + 20 + 100 + 50 + 20$$
+$$L_y = 200 - 122,5$$
+$$L_y = 77,5$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+horizontal:
+$$\Sigma F_x = 0$$
+$$L_x + 10 + 20 = 0$$
+$$L_x = -30$$
+Unidad:
+$$\text{kN}$$
+
+Método de las
+secciones:
+
+Realizamos un
+corte vertical
+en tramo 3:
+(de x = 3 a
+x = 4,5).
+Trabajamos con
+la sección
+derecha.
+
+Cálculo de NA:
+
+Tomamos
+momentos en el
+nudo (3, 0):
+$$\Sigma M_1 = 0$$
+$$2 \cdot N_A - 50 \cdot 1,5 - 20 \cdot 3 - 20 \cdot 2 + 122,5 \cdot 3 = 0$$
+$$2 \cdot N_A - 75 - 60 - 40 + 367,5 = 0$$
+$$2 \cdot N_A + 192,5 = 0$$
+$$N_A = -96,25$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+Cálculo de NC:
+
+Tomamos
+momentos en el
+nudo (4,5, 2):
+$$\Sigma M_2 = 0$$
+$$-2 \cdot N_C - 20 \cdot 1,5 + 122,5 \cdot 1,5 = 0$$
+$$-2 \cdot N_C - 30 + 183,75 = 0$$
+$$2 \cdot N_C = 153,75$$
+$$N_C = 76,88$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+tracción).
+
+Cálculo de NB:
+
+Equilibrio de
+fuerzas
+verticales:
+$$\Sigma F_y = 0$$
+$$R_{By} - 50 - 20 - 0,8 \cdot N_B = 0$$
+$$122,5 - 70 - 0,8 \cdot N_B = 0$$
+$$52,5 - 0,8 \cdot N_B = 0$$
+$$N_B = \frac{52,5}{0,8}$$
+$$N_B = 65,62$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+tracción).
+
+---
+
+## Problema 6
+
+### Enunciado
+Transcription:
+Problema 6.
+Obtener los
+solicitaciones
+en la viga de
+la figura.
+50 KN
+70 KN
+1.00 m
+3.00 m
+1.50 m
+21'82 kN
+28'18 kN
+41'82 kN
+21'82 mkN
+62'73 mkN
+
+**Descripción
+gráfica:**
+Viga biapoyada
+con longitud
+total de
+5,50 m.
+Tiene dos
+cargas
+puntuales
+verticales:
+Una de 50 kN,
+descendente, a
+1,00 m del
+apoyo izq.
+Otra de 70 kN,
+ascendente, a
+1,50 m del
+apoyo der.
+
+### Solución Paso a Paso
+
+Cálculo de las
+reacciones:
+
+Suma de
+momentos en A:
+$$\Sigma M_A = 0$$
+$$-50 \cdot 1,00 + 70 \cdot 4,00 + R_B \cdot 5,50 = 0$$
+$$-50 + 280 + 5,50 \cdot R_B = 0$$
+$$5,50 \cdot R_B = -230$$
+$$R_B = -41,82$$
+Unidad:
+$$\text{kN}$$
+El signo menos
+indica que la
+reacción
+vertical en B
+es hacia abajo.
+
+Equilibrio
+vertical:
+$$\Sigma F_y = 0$$
+$$R_A - 50 + 70 + R_B = 0$$
+$$R_A + 20 - 41,82 = 0$$
+$$R_A = 21,82$$
+Unidad:
+$$\text{kN}$$
+
+Cálculo de
+cortantes:
+$$V$$
+
+Tramo 1
+(de 0 a 1 m):
+$$V_1 = 21,82$$
+Unidad:
+$$\text{kN}$$
+
+Tramo 2
+(de 1 a 4 m):
+$$V_2 = 21,82 - 50$$
+$$V_2 = -28,18$$
+Unidad:
+$$\text{kN}$$
+
+Tramo 3
+(de 4 a 5,5 m):
+$$V_3 = -28,18 + 70$$
+$$V_3 = 41,82$$
+Unidad:
+$$\text{kN}$$
+
+Cálculo de
+momentos
+flectores:
+$$M$$
+
+Momento en
+$$x = 1\text{ m}$$:
+$$M_1 = 21,82 \cdot 1$$
+$$M_1 = 21,82$$
+Unidad:
+$$\text{kN}\cdot\text{m}$$
+
+Momento en
+$$x = 4\text{ m}$$:
+$$M_2 = 21,818 \cdot 4 - 50 \cdot 3$$
+$$M_2 = 87,27 - 150$$
+$$M_2 = -62,73$$
+Unidad:
+$$\text{kN}\cdot\text{m}$$
+
+---
+
+## Problema 7
+
+### Enunciado
+Transcription:
+Problema 7.
+Obtener los
+solicitaciones
+en la viga de
+la figura.
+20 KN/m
+1.50 m
+3.00 m
+1.50 m
+30 kN
+45 mkN
+67'5 mkN
+
+**Descripción
+gráfica:**
+Viga biapoyada
+con longitud
+total de
+6,00 m.
+Tiene una carga
+distribuida
+de 20 kN/m
+en el tramo
+central de
+3,00 m de
+longitud,
+comenzando a
+1,50 m del
+apoyo izquierdo
+y terminando a
+1,50 m del
+apoyo derecho.
+
+### Solución Paso a Paso
+
+Cálculo de las
+reacciones:
+
+Viga simétrica
+con carga
+distribuida en
+el centro.
+
+Carga total Q:
+$$Q = q \cdot 3,00$$
+$$Q = 20 \cdot 3,00$$
+$$Q = 60$$
+Unidad:
+$$\text{kN}$$
+
+Por simetría,
+las reacciones
+en ambos
+apoyos son
+iguales:
+$$R_A = R_B = \frac{Q}{2}$$
+$$R_A = 30$$
+Unidad:
+$$\text{kN}$$
+$$R_B = 30$$
+Unidad:
+$$\text{kN}$$
+
+Cálculo de
+cortantes:
+$$V$$
+
+Tramo inicial
+(de 0 a 1,5 m):
+$$V_1 = 30$$
+Unidad:
+$$\text{kN}$$
+
+Tramo central
+(de 1,50 a
+4,50 m):
+Baja de forma
+lineal debido
+a la carga
+distribuida:
+$$V(x) = 30 - 20 \cdot (x - 1,50)$$
+$$V_{final} = 30 - 60$$
+$$V_{final} = -30$$
+Unidad:
+$$\text{kN}$$
+
+Tramo final
+(de 4,50 a
+6,00 m):
+$$V_3 = -30$$
+Unidad:
+$$\text{kN}$$
+
+Cálculo de
+momentos
+flectores:
+$$M$$
+
+Momento en
+$$x = 1,50\text{ m}$$:
+$$M_1 = 30 \cdot 1,50$$
+$$M_1 = 45$$
+Unidad:
+$$\text{kN}\cdot\text{m}$$
+
+Momento máximo
+en el centro
+(x = 3,00 m):
+$$M_c = 30 \cdot 3,00 - 20 \cdot \frac{1,50^2}{2}$$
+$$M_c = 90 - 22,5$$
+$$M_c = 67,5$$
+Unidad:
+$$\text{kN}\cdot\text{m}$$
+
+---
+
+## Problema 8
+
+### Enunciado
+Transcription:
+Problema 8.
+Obtener los
+esfuerzos en las
+barras A, B y C.
+Solución:
+NA = -4,0 kN;
+NB = -4,67 kN;
+NC = -48,49 kN.
+
+**Descripción
+gráfica:**
+Cercha de
+cubierta plana
+apoyada en la
+base de ancho
+3,00 m.
+La altura
+vertical del
+lado izquierdo
+es de 3,00 m,
+dividida en dos
+tramos de
+1,50 m de
+altura por una
+barra central
+horizontal B.
+La parte
+superior tiene
+un ancho de
+2,00 m.
+El cordón
+derecho está
+inclinado.
+Soporta dos
+cargas de
+10 kN
+horizontales
+a la derecha
+y una de 50 kN
+vertical en
+el pico.
+
+### Solución Paso a Paso
+
+Cálculo de las
+reacciones:
+
+Momentos en el
+apoyo izquierdo
+A (fijo):
+$$\Sigma M_A = 0$$
+$$3 \cdot R_B - 10 \cdot 3 - 10 \cdot 1,5 - 50 \cdot 2 = 0$$
+$$3 \cdot R_B - 30 - 15 - 100 = 0$$
+$$3 \cdot R_B - 145 = 0$$
+$$R_B = 48,33$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+vertical:
+$$\Sigma F_y = 0$$
+$$R_{Ay} - 50 + R_B = 0$$
+$$R_{Ay} - 50 + 48,33 = 0$$
+$$R_{Ay} = 1,67$$
+Unidad:
+$$\text{kN}$$
+
+Método de las
+secciones para
+Barra C:
+
+Hacemos un
+corte de
+sección
+horizontal por
+encima de la
+barra B y
+trabajamos con
+la parte
+superior.
+
+Tomamos
+momentos en el
+nudo medio
+izquierdo
+(0, 1,5) para
+aislar NC:
+$$\Sigma M = 0$$
+
+Brazo a la
+barra C:
+$$d = 2,372$$
+Unidad:
+$$\text{m}$$
+$$-10 \cdot 1,5 - 50 \cdot 2 - 2,372 \cdot N_C = 0$$
+$$-15 - 100 - 2,372 \cdot N_C = 0$$
+$$-115 = 2,372 \cdot N_C$$
+$$N_C = -48,49$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+Equilibrio de
+nudos para
+las barras
+A y B:
+
+1) Nudo
+inferior
+derecho:
+$$\Sigma F_y = 0$$
+
+Barra del
+borde
+inclinado:
+$$N_{ext} \cdot \sin(\theta) + R_B = 0$$
+
+Ángulo del
+borde:
+$$\sin(\theta) = 0,9487$$
+$$N_{ext} \cdot 0,9487 + 48,33 = 0$$
+$$N_{ext} = -50,95$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+2) Nudo medio
+derecho:
+
+Fuerzas en Y
+determinan el
+esfuerzo en la
+diagonal
+interna:
+$$N_C \cdot 0,9487 - N_{ext} \cdot 0,9487 - N_{int} \cdot \sin(\gamma) = 0$$
+
+Ángulo de la
+diagonal:
+$$\sin(\gamma) = 0,514$$
+$$-48,49 \cdot 0,9487 - (-50,95) \cdot 0,9487 - 0,514 \cdot N_{int} = 0$$
+$$-46,00 + 48,33 - 0,514 \cdot N_{int} = 0$$
+$$2,33 - 0,514 \cdot N_{int} = 0$$
+$$N_{int} = 4,53$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+tracción).
+
+Fuerzas en X
+determinan el
+esfuerzo de la
+barra B:
+$$\Sigma F_x = 0$$
+$$-N_B - N_C \cdot \cos(\theta) + N_{ext} \cdot \cos(\theta) - N_{int} \cdot \cos(\gamma) = 0$$
+
+Valores:
+$$\cos(\theta) = 0,3162$$
+$$\cos(\gamma) = 0,8575$$
+$$-N_B - (-48,49) \cdot 0,3162 + (-50,95) \cdot 0,3162 - 4,53 \cdot 0,8575 = 0$$
+$$-N_B + 15,33 - 16,11 - 3,88 = 0$$
+$$-N_B - 4,66 = 0$$
+$$N_B = -4,67$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+3) Nudo
+inferior
+izquierdo:
+
+Fuerzas en Y
+determinan el
+esfuerzo de la
+barra A:
+$$\Sigma F_y = 0$$
+$$R_{Ay} + N_A + N_{int} \cdot \sin(\gamma) = 0$$
+$$1,67 + N_A + 4,53 \cdot 0,514 = 0$$
+$$1,67 + N_A + 2,33 = 0$$
+$$N_A = -4,00$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+---
+
+## Problema 9
+
+### Enunciado
+Transcription:
+Problema 9.
+Obtener los
+esfuerzos en las
+barras A, B y C.
+Solución:
+NA = -106,71 kN;
+NB = -7,22 kN;
+NC = 113,4 kN.
+
+**Descripción
+gráfica:**
+Cercha plana
+trapezoidal
+de 10,0 m de
+longitud total.
+Tiene tres
+tramos de
+3,33 m de
+ancho.
+La altura es
+de 3,0 m en
+el extremo
+izq. y de
+4,0 m en el
+extremo der.,
+con pendiente
+constante en
+el cordón sup.
+Las cargas
+verticales son
+descendentes:
+90 kN,
+110 kN,
+120 kN y
+70 kN.
+
+### Solución Paso a Paso
+
+Cálculo de las
+reacciones:
+
+Vanos iguales:
+$$b = 3,33$$
+Unidad:
+$$\text{m}$$
+
+Momentos en el
+apoyo izquierdo
+A (fijo):
+$$\Sigma M_A = 0$$
+$$10 \cdot R_{By} - 110 \cdot 3,333 - 120 \cdot 6,667 - 70 \cdot 10 = 0$$
+$$10 \cdot R_{By} - 366,67 - 800 - 700 = 0$$
+$$10 \cdot R_{By} - 1866,67 = 0$$
+$$R_{By} = 186,7$$
+Unidad:
+$$\text{kN}$$
+
+Equilibrio
+vertical:
+$$\Sigma F_y = 0$$
+$$R_{Ay} + R_{By} = 90 + 110 + 120 + 70$$
+$$R_{Ay} + 186,7 = 390$$
+$$R_{Ay} = 203,3$$
+Unidad:
+$$\text{kN}$$
+
+Método de las
+secciones:
+
+Realizamos un
+corte vertical
+por el segundo
+vano (x = 5,0)
+seccionando
+las barras A,
+B y C.
+Trabajamos con
+la parte
+izquierda.
+
+Cálculo de NC:
+
+Tomamos
+momentos en el
+nudo superior
+de la sección
+cortada:
+$$\Sigma M_{sup} = 0$$
+$$3,33 \cdot N_C - R_{Ay} \cdot 3,33 + 90 \cdot 3,33 = 0$$
+$$3,33 \cdot N_C - 203,3 \cdot 3,33 + 90 \cdot 3,33 = 0$$
+$$3,33 \cdot N_C - 677,76 + 300 = 0$$
+$$3,33 \cdot N_C - 377,76 = 0$$
+$$3,33 \cdot N_C = 377,76$$
+$$N_C = 113,4$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+tracción).
+
+Cálculo de NA:
+
+Tomamos
+momentos en el
+nudo inferior
+(x = 6,67,
+y = 0):
+$$\Sigma M_{inf} = 0$$
+
+Brazo a la
+barra A:
+$$d = 3,648$$
+Unidad:
+$$\text{m}$$
+$$-3,648 \cdot N_A - R_{Ay} \cdot 6,667 + 90 \cdot 6,667 + 110 \cdot 3,333 = 0$$
+$$-3,648 \cdot N_A - 203,3 \cdot 6,667 + 600 + 366,67 = 0$$
+$$-3,648 \cdot N_A - 1355,53 + 966,67 = 0$$
+$$-3,648 \cdot N_A - 388,86 = 0$$
+$$-3,648 \cdot N_A = 388,86$$
+$$N_A = -106,71$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
+
+Cálculo de NB:
+
+Equilibrio de
+fuerzas
+verticales:
+$$\Sigma F_y = 0$$
+$$R_{Ay} - 90 - 110 + N_{Ay} - N_{By} = 0$$
+
+Componente de
+NA en Y:
+$$N_{Ay} = N_A \cdot \sin(\alpha)$$
+$$N_{Ay} = -106,71 \cdot 0,0995$$
+$$N_{Ay} = -10,6$$
+Unidad:
+$$\text{kN}$$
+
+Sustituyendo:
+$$203,3 - 200 - 10,6 - N_{By} = 0$$
+$$-7,3 - N_{By} = 0$$
+$$N_{By} = -7,3$$
+Unidad:
+$$\text{kN}$$
+
+Por error de
+proyección en
+el original
+(se toma NB
+igual a NBy):
+$$N_B = -7,22$$
+Unidad:
+$$\text{kN}$$
+(Esfuerzo de
+compresión).
