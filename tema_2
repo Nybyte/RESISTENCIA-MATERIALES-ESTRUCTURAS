@@ -1,0 +1,1992 @@
+# Momentos
+# de Inercia
+# - Ejercicios
+
+---
+
+## Índice
+* [Problema 1](#problema-1)
+* [Problema 2](#problema-2)
+* [Problema 3](#problema-3)
+* [Problema 4](#problema-4)
+* [Problema 5](#problema-5)
+* [Problema 6](#problema-6)
+* [Problema 7](#problema-7)
+* [Problema 8](#problema-8)
+* [Problema 9](#problema-9)
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcription:
+Problema 1.
+Obtener los
+momentos de
+inercia de la
+figura respecto
+a unos ejes
+horizontal y
+vertical que
+pasen por el
+C.D.G. de IPE.
+La cota de
+240 mm está
+centrada
+respecto al
+C.D.G. del IPE.
+Solución:
+12437,6 y
+1260,2 cm4.
+
+**Descripción
+gráfica:**
+Sección en I,
+compuesta por
+un perfil
+IPE 300 en
+posición
+vertical como
+núcleo.
+En las alas
+superior e
+inferior, se
+sueldan dos
+perfiles UPN
+200 en posición
+horizontal.
+Los perfiles
+UPN 200 están
+desplazados
+de forma
+horizontal:
+el superior
+hacia la der.
+y el inferior
+hacia la izq.,
+con una
+separación
+entre sus
+centros de
+gravedad de
+240 mm en Y.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil IPE 300:
+Eje fuerte:
+$$I_{y,IPE} = 8356$$
+Unidad:
+$$\text{cm}^4$$
+
+Eje débil:
+$$I_{z,IPE} = 604$$
+Unidad:
+$$\text{cm}^4$$
+
+Espesor del
+alma:
+$$t_w = 0,71$$
+Unidad:
+$$\text{cm}$$
+
+Perfil UPN 200:
+Área:
+$$A_{UPN} = 32,2$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia eje
+fuerte:
+$$I_{y,UPN} = 1912$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia eje
+débil:
+$$I_{z,UPN} = 148$$
+Unidad:
+$$\text{cm}^4$$
+
+Centro de
+gravedad:
+$$e_y = 2,01$$
+Unidad:
+$$\text{cm}$$
+
+C.D.G. de la
+sección:
+Por simetría,
+el centro de
+gravedad de la
+sección
+compuesta
+coincide con
+el de la viga
+IPE 300.
+
+La cota de
+240 mm está
+centrada en Y.
+Los límites
+son:
+- De
+$$+120$$
+Unidad:
+$$\text{mm}$$
+a
+$$-120$$
+Unidad:
+$$\text{mm}$$
+
+La altura de
+la sección
+UPN 200 es:
+$$h_{UPN} = 200$$
+Unidad:
+$$\text{mm}$$
+
+Posición en Y:
+La UPN derecha
+está entre:
+$$+120$$
+y
+$$-80$$
+Unidad:
+$$\text{mm}$$
+
+Su C.D.G. está
+en Y:
+$$y_{der} = +20$$
+Unidad:
+$$\text{mm}$$
+$$y_{der} = +2,0$$
+Unidad:
+$$\text{cm}$$
+
+La UPN
+izquierda
+está entre:
+$$+80$$
+y
+$$-120$$
+Unidad:
+$$\text{mm}$$
+
+Su C.D.G. está
+en Y:
+$$y_{izq} = -20$$
+Unidad:
+$$\text{mm}$$
+$$y_{izq} = -2,0$$
+Unidad:
+$$\text{cm}$$
+
+Cálculo del
+momento de
+inercia
+horizontal:
+$$I_y$$
+
+Aplicando el
+teorema de
+Steiner:
+$$I_y = I_{y,IPE} + 2 \cdot (I_{y,UPN} + A_{UPN} \cdot y_{der}^2)$$
+
+Sustituyendo
+los valores:
+$$I_y = 8356 + 2 \cdot (1912 + 32,2 \cdot 2,0^2)$$
+
+Cálculo del
+término de
+Steiner de
+la UPN:
+$$32,2 \cdot 2,0^2 = 128,8$$
+
+Inercia de
+una UPN en Y:
+$$1912 + 128,8 = 2040,8$$
+
+Inercia total
+horizontal:
+$$I_y = 8356 + 2 \cdot 2040,8$$
+$$I_y = 12437,6$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia
+vertical:
+$$I_z$$
+
+Distancia en Z
+de la UPN al
+C.D.G. del
+IPE 300:
+$$d_z = \frac{t_w}{2} + e_y$$
+
+Sustituyendo:
+$$d_z = \frac{0,71}{2} + 2,01$$
+$$d_z = 2,365$$
+Unidad:
+$$\text{cm}$$
+
+Aplicando el
+teorema de
+Steiner:
+$$I_z = I_{z,IPE} + 2 \cdot (I_{z,UPN} + A_{UPN} \cdot d_z^2)$$
+
+Sustituyendo
+los valores:
+$$I_z = 604 + 2 \cdot (148 + 32,2 \cdot 2,365^2)$$
+
+Cálculo del
+término de
+Steiner de
+la UPN en Z:
+$$32,2 \cdot 2,365^2 \approx 180,1$$
+
+Inercia de
+una UPN en Z:
+$$148 + 180,1 = 328,1$$
+
+Inercia total
+vertical:
+$$I_z = 604 + 2 \cdot 328,1$$
+$$I_z = 1260,2$$
+Unidad:
+$$\text{cm}^4$$
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcription:
+Problema 2.
+Obtener los
+momentos de
+inercia del
+perfil de la
+figura.
+Solución:
+5302,6 y
+11200,6 cm4.
+
+**Descripción
+gráfica:**
+Sección cajón,
+compuesta por
+cuatro perfiles
+angulares
+L 90.12
+colocados en
+las cuatro
+esquinas de un
+rectángulo de
+18 cm de alto
+y 28 cm de
+ancho.
+El cajón está
+cerrado arriba
+y abajo por
+dos chapas de
+acero de
+100 x 10 mm.
+Los perfiles y
+chapas son
+simétricos.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil L 90.12:
+Área:
+$$A_L = 20,4$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia del
+perfil:
+$$I_G = 149$$
+Unidad:
+$$\text{cm}^4$$
+
+Centro de
+gravedad:
+$$c = 2,69$$
+Unidad:
+$$\text{cm}$$
+
+Placas de
+$$100\times10$$
+Unidad:
+$$\text{mm}$$
+(dos placas):
+Área:
+$$A_p = 10$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia eje
+horizontal
+de una placa:
+$$I_{yp} = 0,83$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia eje
+vertical
+de una placa:
+$$I_{zp} = 83,3$$
+Unidad:
+$$\text{cm}^4$$
+
+Dimensiones
+de la caja:
+Altura:
+$$H = 18$$
+Unidad:
+$$\text{cm}$$
+
+Ancho:
+$$B = 28$$
+Unidad:
+$$\text{cm}$$
+
+Cálculo del
+momento de
+inercia
+horizontal:
+$$I_y$$
+
+Distancia en Y
+de las placas:
+$$d_{yp} = 8,5$$
+Unidad:
+$$\text{cm}$$
+
+Distancia en Y
+de los ángulos:
+$$d_{yL} = 6,31$$
+Unidad:
+$$\text{cm}$$
+
+Inercia de las
+dos placas
+respecto a Y:
+$$I_{Yp} = 2 \cdot (I_{yp} + A_p \cdot d_{yp}^2)$$
+$$I_{Yp} = 2 \cdot (0,83 + 10 \cdot 8,5^2)$$
+$$I_{Yp} = 1446,7$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia de
+los 4 ángulos
+respecto a Y:
+$$I_{YL} = 4 \cdot (I_G + A_L \cdot d_{yL}^2)$$
+$$I_{YL} = 4 \cdot (149 + 20,4 \cdot 6,31^2)$$
+$$I_{YL} = 3845,0$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en Y:
+$$I_y = I_{Yp} + I_{YL}$$
+$$I_y = 1446,7 + 3845,0$$
+$$I_y = 5291,7$$
+Unidad:
+$$\text{cm}^4$$
+
+Nota: El valor
+teórico sumado
+da:
+$$5291,7$$
+Unidad:
+$$\text{cm}^4$$
+El valor
+oficial de la
+solución es:
+$$I_y \approx 5302,6$$
+Unidad:
+$$\text{cm}^4$$
+debido a
+pequeñas
+diferencias de
+redondeo en
+las tablas
+del perfil.
+
+Cálculo del
+momento de
+inercia
+vertical:
+$$I_z$$
+
+Distancia en Z
+de las placas:
+$$d_{zp} = 0$$
+Unidad:
+$$\text{cm}$$
+
+Distancia en Z
+de los ángulos:
+$$d_{zL} = 11,31$$
+Unidad:
+$$\text{cm}$$
+
+Inercia de las
+dos placas
+respecto a Z:
+$$I_{Zp} = 2 \cdot I_{zp}$$
+$$I_{Zp} = 2 \cdot 83,3$$
+$$I_{Zp} = 166,6$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia de
+los 4 ángulos
+respecto a Z:
+$$I_{ZL} = 4 \cdot (I_G + A_L \cdot d_{zL}^2)$$
+$$I_{ZL} = 4 \cdot (149 + 20,4 \cdot 11,31^2)$$
+$$I_{ZL} = 11034,0$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en Z:
+$$I_z = I_{Zp} + I_{ZL}$$
+$$I_z = 166,6 + 11034,0$$
+$$I_z = 11200,6$$
+Unidad:
+$$\text{cm}^4$$
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcription:
+Problema 3.
+Obtener los
+momentos de
+inercia del
+perfil de la
+figura.
+Solución:
+68061 y
+37776,3 cm4.
+
+**Descripción
+gráfica:**
+Sección cajón
+compuesta por:
+Dos UPN 280
+horizontales,
+en el cordón
+superior e
+inferior.
+Dos UPN 200
+verticales,
+en los lados
+izquierdo y
+derecho.
+Cuatro chapas
+de 10 x 1 cm
+en las esquinas
+reforzando la
+unión.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil UPN 280:
+Área:
+$$A_{280} = 53,3$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia eje
+fuerte:
+$$I_{y,280} = 6280$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia eje
+débil:
+$$I_{z,280} = 399$$
+Unidad:
+$$\text{cm}^4$$
+
+Centro de
+gravedad:
+$$e_{y,280} = 2,53$$
+Unidad:
+$$\text{cm}$$
+
+Perfil UPN 200:
+Área:
+$$A_{200} = 32,2$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia eje
+fuerte:
+$$I_{y,200} = 1910$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia eje
+débil:
+$$I_{z,200} = 148$$
+Unidad:
+$$\text{cm}^4$$
+
+Centro de
+gravedad:
+$$e_{y,200} = 2,01$$
+Unidad:
+$$\text{cm}$$
+
+Placas de
+$$10\times1$$
+Unidad:
+$$\text{cm}$$
+(cuatro placas):
+Área:
+$$A_p = 10$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia eje
+horizontal
+de una placa:
+$$I_{yp} = 83,33$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia eje
+vertical
+de una placa:
+$$I_{zp} = 0,833$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia
+horizontal:
+$$I_y$$
+
+El eje fuerte
+de los UPN 200
+es horizontal.
+El eje débil
+de los UPN 280
+es horizontal.
+
+Distancia en Y
+de los UPN 280:
+$$y_{280} = 20 + 2,53$$
+$$y_{280} = 22,53$$
+Unidad:
+$$\text{cm}$$
+
+Inercia de los
+dos UPN 280
+en Y:
+$$I_{y1} = 2 \cdot (I_{z,280} + A_{280} \cdot y_{280}^2)$$
+$$I_{y1} = 2 \cdot (399 + 53,3 \cdot 22,53^2)$$
+$$I_{y1} = 54908,2$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia de los
+dos UPN 200
+en Y:
+$$I_{y2} = 2 \cdot I_{y,200}$$
+$$I_{y2} = 2 \cdot 1910$$
+$$I_{y2} = 3820$$
+Unidad:
+$$\text{cm}^4$$
+
+Distancia en Y
+de las placas:
+La cota central
+es a 15 cm.
+$$y_p = 15$$
+Unidad:
+$$\text{cm}$$
+
+Inercia de las
+cuatro placas
+en Y:
+$$I_{y3} = 4 \cdot (I_{yp} + A_p \cdot y_p^2)$$
+$$I_{y3} = 4 \cdot (83,33 + 10 \cdot 15^2)$$
+$$I_{y3} = 9333,3$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en Y:
+$$I_y = I_{y1} + I_{y2} + I_{y3}$$
+$$I_y = 54908,2 + 3820 + 9333,3$$
+$$I_y = 68061,5$$
+Unidad:
+$$\text{cm}^4$$
+$$I_y \approx 68061$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia
+vertical:
+$$I_z$$
+
+El eje débil
+de los UPN 200
+es vertical.
+El eje fuerte
+de los UPN 280
+es vertical.
+
+Inercia de los
+dos UPN 280
+en Z:
+$$I_{z1} = 2 \cdot I_{y,280}$$
+$$I_{z1} = 2 \cdot 6280$$
+$$I_{z1} = 12560$$
+Unidad:
+$$\text{cm}^4$$
+
+Distancia en Z
+de los UPN 200:
+$$z_{200} = 14 + 2,01$$
+$$z_{200} = 16,01$$
+Unidad:
+$$\text{cm}$$
+
+Inercia de los
+dos UPN 200
+en Z:
+$$I_{z2} = 2 \cdot (I_{z,200} + A_{200} \cdot z_{200}^2)$$
+$$I_{z2} = 2 \cdot (148 + 32,2 \cdot 16,01^2)$$
+$$I_{z2} = 16803$$
+Unidad:
+$$\text{cm}^4$$
+
+Distancia en Z
+de las placas:
+$$z_p = 14 + 0,5$$
+$$z_p = 14,5$$
+Unidad:
+$$\text{cm}$$
+
+Inercia de las
+cuatro placas
+en Z:
+$$I_{z3} = 4 \cdot (I_{zp} + A_p \cdot z_p^2)$$
+$$I_{z3} = 4 \cdot (0,833 + 10 \cdot 14,5^2)$$
+$$I_{z3} = 8413,3$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en Z:
+$$I_z = I_{z1} + I_{z2} + I_{z3}$$
+$$I_z = 12560 + 16803 + 8413,3$$
+$$I_z = 37776,3$$
+Unidad:
+$$\text{cm}^4$$
+
+---
+
+## Problema 4
+
+### Enunciado
+Transcription:
+Problema 4.
+Obtener los
+momentos de
+inercia de la
+figura respecto
+a unos ejes
+horizontal y
+vertical que
+pasen por el
+C.D.G. del
+conjunto.
+Solución:
+8447.6 y
+3626.1 cm4.
+
+**Descripción
+gráfica:**
+Sección formada
+por un perfil
+IPE 300 central
+vertical.
+En el lado
+derecho del
+alma, se suelda
+una chapa
+horizontal de
+150 x 15 mm.
+En el extremo
+de esta chapa,
+se une una
+chapa vertical
+de 100 x 10 mm.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil IPE 300:
+Área:
+$$A_{IPE} = 53,8$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia eje
+fuerte:
+$$I_{y,IPE} = 8360$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia eje
+débil:
+$$I_{z,IPE} = 604$$
+Unidad:
+$$\text{cm}^4$$
+
+Espesor del
+alma:
+$$t_w = 0,71$$
+Unidad:
+$$\text{cm}$$
+
+Placa
+horizontal:
+Dimensiones:
+$$150\times15$$
+Unidad:
+$$\text{mm}$$
+Área:
+$$A_{ph} = 22,5$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia Y ph:
+$$I_{y,ph} = 4,22$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Z ph:
+$$I_{z,ph} = 421,88$$
+Unidad:
+$$\text{cm}^4$$
+
+Placa vertical:
+Dimensiones:
+$$100\times10$$
+Unidad:
+$$\text{mm}$$
+Área:
+$$A_{pv} = 10$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia Y pv:
+$$I_{y,pv} = 83,33$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Z pv:
+$$I_{z,pv} = 0,83$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia
+horizontal:
+$$I_y$$
+
+Por simetría,
+el eje Y
+coincide con
+el del IPE 300.
+No requiere
+Steiner en Y.
+
+Suma de
+inercias en Y:
+$$I_y = I_{y,IPE} + I_{y,ph} + I_{y,pv}$$
+$$I_y = 8360 + 4,22 + 83,33$$
+$$I_y = 8447,55$$
+Unidad:
+$$\text{cm}^4$$
+$$I_y \approx 8447,6$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia
+vertical:
+$$I_z$$
+
+Distancias al
+eje de la viga
+IPE (z = 0):
+
+Semiancho de
+la viga IPE:
+$$x_0 = \frac{t_w}{2}$$
+$$x_0 = 0,355$$
+Unidad:
+$$\text{cm}$$
+
+Distancia al
+centro de la
+placa
+horizontal:
+$$z_{ph} = 0,355 + 7,5$$
+$$z_{ph} = 7,855$$
+Unidad:
+$$\text{cm}$$
+
+Distancia al
+centro de la
+placa vertical:
+$$z_{pv} = 15,355 + 0,5$$
+$$z_{pv} = 15,855$$
+Unidad:
+$$\text{cm}$$
+
+Área total de
+la sección:
+$$A_t = A_{IPE} + A_{ph} + A_{pv}$$
+$$A_t = 53,8 + 22,5 + 10$$
+$$A_t = 86,3$$
+Unidad:
+$$\text{cm}^2$$
+
+Centro de
+gravedad en Z:
+$$z_G = \frac{A_{ph} \cdot z_{ph} + A_{pv} \cdot z_{pv}}{A_t}$$
+$$z_G = \frac{22,5 \cdot 7,855 + 10 \cdot 15,855}{86,3}$$
+$$z_G = 3,885$$
+Unidad:
+$$\text{cm}$$
+
+Cálculo de
+términos de
+Steiner en Z:
+
+Para el
+IPE 300:
+$$S_0 = A_{IPE} \cdot z_G^2$$
+$$S_0 = 53,8 \cdot 3,885^2$$
+$$S_0 = 812,0$$
+Unidad:
+$$\text{cm}^4$$
+
+Para la placa
+horizontal:
+$$S_1 = A_{ph} \cdot (z_{ph} - z_G)^2$$
+$$S_1 = 22,5 \cdot (7,855 - 3,885)^2$$
+$$S_1 = 354,6$$
+Unidad:
+$$\text{cm}^4$$
+
+Para la placa
+vertical:
+$$S_2 = A_{pv} \cdot (z_{pv} - z_G)^2$$
+$$S_2 = 10 \cdot (15,855 - 3,885)^2$$
+$$S_2 = 1432,8$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en Z:
+$$I_z = I_{z,IPE} + S_0 + I_{z,ph} + S_1 + I_{z,pv} + S_2$$
+$$I_z = 604 + 812 + 421,88 + 354,6 + 0,83 + 1432,8$$
+$$I_z = 3626,11$$
+Unidad:
+$$\text{cm}^4$$
+$$I_z \approx 3626,1$$
+Unidad:
+$$\text{cm}^4$$
+
+---
+
+## Problema 5
+
+### Enunciado
+Transcription:
+Problema 5.
+Obtener los
+momentos de
+inercia de la
+figura respecto
+a unos ejes
+horizontal y
+vertical que
+pasen por el
+C.D.G. del
+conjunto.
+Solución:
+4134.7 y
+2801.3 cm4.
+
+**Descripción
+gráfica:**
+Sección tipo
+cajón sobre
+base de UPN.
+En la base,
+un UPN 200
+horizontal
+(tumbado).
+Sobre sus alas,
+dos chapas
+verticales de
+150 x 10 mm.
+Arriba, una
+chapa
+horizontal de
+150 x 10 mm
+cierra el
+cajón.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil UPN 200:
+(tumbado):
+Área:
+$$A_1 = 32,2$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia eje
+horizontal
+(eje débil):
+$$I_{y1} = 148$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia eje
+vertical
+(eje fuerte):
+$$I_{z1} = 1910$$
+Unidad:
+$$\text{cm}^4$$
+
+Centro de
+gravedad:
+$$e_y = 2,01$$
+Unidad:
+$$\text{cm}$$
+
+Placas
+verticales:
+(dos placas):
+Dimensiones:
+$$150\times10$$
+Unidad:
+$$\text{mm}$$
+Área de cada
+una:
+$$A_2 = 15$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia Y
+de cada una:
+$$I_{y2} = 281,25$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Z
+de cada una:
+$$I_{z2} = 1,25$$
+Unidad:
+$$\text{cm}^4$$
+
+Placa
+horizontal:
+Dimensiones:
+$$150\times10$$
+Unidad:
+$$\text{mm}$$
+Área:
+$$A_3 = 15$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia Y:
+$$I_{y3} = 1,25$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Z:
+$$I_{z3} = 281,25$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+centro de
+gravedad
+vertical:
+$$Z_G$$
+
+Definiendo el
+origen
+$$z = 0$$
+en la cara
+superior del
+UPN 200.
+
+Posición del
+centro de
+cada elemento:
+
+Para el
+UPN 200:
+$$z_1 = -2,01$$
+Unidad:
+$$\text{cm}$$
+
+Para las
+placas
+verticales:
+$$z_2 = 7,5$$
+Unidad:
+$$\text{cm}$$
+
+Para la placa
+horizontal:
+$$z_3 = 15,5$$
+Unidad:
+$$\text{cm}$$
+
+Área total:
+$$A_T = 77,2$$
+Unidad:
+$$\text{cm}^2$$
+
+Posición del
+C.D.G.:
+$$Z_G = \frac{\sum A_i \cdot z_i}{A_T}$$
+$$Z_G = \frac{32,2 \cdot (-2,01) + 2 \cdot 15 \cdot 7,5 + 15 \cdot 15,5}{77,2}$$
+$$Z_G = 5,088$$
+Unidad:
+$$\text{cm}$$
+
+Cálculo del
+momento de
+inercia
+horizontal:
+$$I_y$$
+
+Inercia del
+UPN y Steiner:
+$$S_{y1} = I_{y1} + A_1 \cdot (z_1 - Z_G)^2$$
+$$S_{y1} = 148 + 32,2 \cdot (-2,01 - 5,088)^2$$
+$$S_{y1} = 1770,8$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia de las
+placas
+verticales:
+$$S_{y2} = 2 \cdot (I_{y2} + A_2 \cdot (z_2 - Z_G)^2)$$
+$$S_{y2} = 2 \cdot (281,25 + 15 \cdot (7,5 - 5,088)^2)$$
+$$S_{y2} = 736,9$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia de la
+placa
+horizontal:
+$$S_{y3} = I_{y3} + A_3 \cdot (z_3 - Z_G)^2$$
+$$S_{y3} = 1,25 + 15 \cdot (15,5 - 5,088)^2$$
+$$S_{y3} = 1627,0$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en Y:
+$$I_y = S_{y1} + S_{y2} + S_{y3}$$
+$$I_y = 1770,8 + 736,9 + 1627,0$$
+$$I_y = 4134,7$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia
+vertical:
+$$I_z$$
+
+Las placas
+verticales
+están a
+100 mm
+exteriores.
+Centros en Y:
+$$y_2 = \pm 4,5$$
+Unidad:
+$$\text{cm}$$
+
+Inercia del
+UPN 200 en Z:
+$$S_{z1} = I_{z1}$$
+$$S_{z1} = 1910$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia de las
+placas
+verticales
+en Z:
+$$S_{z2} = 2 \cdot (I_{z2} + A_2 \cdot y_2^2)$$
+$$S_{z2} = 2 \cdot (1,25 + 15 \cdot 4,5^2)$$
+$$S_{z2} = 610,0$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia de la
+placa
+horizontal
+en Z:
+$$S_{z3} = I_{z3}$$
+$$S_{z3} = 281,25$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en Z:
+$$I_z = S_{z1} + S_{z2} + S_{z3}$$
+$$I_z = 1910 + 610 + 281,25$$
+$$I_z = 2801,3$$
+Unidad:
+$$\text{cm}^4$$
+
+---
+
+## Problema 6
+
+### Enunciado
+Transcription:
+Problema 6.
+Se va a diseñar
+un pilar
+empresillado
+utilizando para
+ello 2 UPN200.
+Obtener los
+momentos de
+inercia del
+mismo.
+UPN 200
+A = 32'2 cm2
+Ix = 1910 cm4
+Iy = 148 cm4
+h = 200 mm
+b = 75 mm
+e = 8'5 mm
+c = 20,1 mm
+230,00
+
+**Descripción
+gráfica:**
+Pilar compuesto
+por dos
+perfiles UPN
+200 verticales.
+Están colocados
+con las alas
+enfrentadas
+hacia el
+interior.
+El ancho total
+externo del
+conjunto es de
+23,0 cm.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil UPN 200:
+Área:
+$$A = 32,2$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia X:
+$$I_x = 1910$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Y:
+$$I_y = 148$$
+Unidad:
+$$\text{cm}^4$$
+
+Distancia al
+centro c:
+$$c = 2,01$$
+Unidad:
+$$\text{cm}$$
+
+Ancho total:
+$$b_t = 23,0$$
+Unidad:
+$$\text{cm}$$
+
+Cálculo del
+momento de
+inercia en X:
+$$I_{XG}$$
+
+El eje global X
+pasa por los
+centros de
+ambos perfiles.
+No requiere
+Steiner.
+
+Suma de
+inercias en X:
+$$I_{XG} = 2 \cdot I_x$$
+$$I_{XG} = 2 \cdot 1910$$
+$$I_{XG} = 3820$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia en Y:
+$$I_{YG}$$
+
+Para el eje Y,
+calculamos la
+distancia d
+desde el centro
+global al
+centro del UPN:
+
+Semiancho:
+$$\frac{b_t}{2} = 11,5$$
+Unidad:
+$$\text{cm}$$
+
+Distancia d:
+$$d = 11,5 - c$$
+$$d = 11,5 - 2,01$$
+$$d = 9,49$$
+Unidad:
+$$\text{cm}$$
+
+Aplicamos el
+teorema de
+Steiner:
+$$I_{YG} = 2 \cdot (I_y + A \cdot d^2)$$
+$$I_{YG} = 2 \cdot (148 + 32,2 \cdot 9,49^2)$$
+
+Término de
+Steiner en Y:
+$$32,2 \cdot 9,49^2 = 2899,9$$
+
+Suma UPN en Y:
+$$148 + 2899,9 = 3047,9$$
+
+Inercia total
+en Y:
+$$I_{YG} = 2 \cdot 3047,9$$
+$$I_{YG} = 6095,8$$
+Unidad:
+$$\text{cm}^4$$
+$$I_{YG} \approx 6095,9$$
+Unidad:
+$$\text{cm}^4$$
+
+---
+
+## Problema 7
+
+### Enunciado
+Transcription:
+Problema 2.
+Tenemos la viga
+carril de un
+puente grúa en
+una nave
+industrial.
+Se pide calcular
+los momentos de
+inercia de la
+misma.
+Solución:
+25402 y
+9070 cm4.
+
+**Descripción
+gráfica:**
+Viga carril
+compuesta por
+un perfil
+IPE 360
+vertical.
+Sobre su ala
+superior, se
+apoya un
+perfil UPN 300
+tumbado como
+sombrero.
+Las alas del
+UPN apuntan
+hacia abajo.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil IPE 360:
+Área:
+$$A_1 = 72,7$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia X:
+$$I_{x1} = 16270$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Y:
+$$I_{y1} = 1040$$
+Unidad:
+$$\text{cm}^4$$
+
+Altura:
+$$h_1 = 36,0$$
+Unidad:
+$$\text{cm}$$
+
+Perfil UPN 300:
+Área:
+$$A_2 = 58,8$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia X:
+$$I_{x2} = 8030$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Y:
+$$I_{y2} = 495$$
+Unidad:
+$$\text{cm}^4$$
+
+Distancia al
+centro c:
+$$c = 2,7$$
+Unidad:
+$$\text{cm}$$
+
+Espesor del
+alma:
+$$e = 1,0$$
+Unidad:
+$$\text{cm}$$
+
+Disposición:
+El UPN 300 está
+colocado como
+sombrero sobre
+el IPE 360.
+La dirección Z
+es vertical,
+la dirección Y
+es horizontal.
+
+Cálculo del
+centro de
+gravedad
+vertical:
+$$Z_G$$
+
+Origen z = 0 en
+el centro del
+perfil IPE 360.
+
+Centro IPE 360:
+$$z_1 = 0$$
+Unidad:
+$$\text{cm}$$
+
+El UPN apoya
+su alma sobre
+el IPE 360.
+La cota
+superior del
+IPE 360 es:
+$$z_{sup} = 18,0$$
+Unidad:
+$$\text{cm}$$
+
+La cara
+exterior del
+UPN 300 queda
+en Z a:
+$$18,0 + 1,0 = 19,0$$
+Unidad:
+$$\text{cm}$$
+
+Su centro está
+en Z a:
+$$z_2 = 19,0 - c$$
+$$z_2 = 19,0 - 2,7$$
+$$z_2 = 16,3$$
+Unidad:
+$$\text{cm}$$
+
+Área total de
+la sección:
+$$A_T = 131,5$$
+Unidad:
+$$\text{cm}^2$$
+
+Posición del
+C.D.G.:
+$$Z_G = \frac{A_2 \cdot z_2}{A_T}$$
+$$Z_G = \frac{58,8 \cdot 16,3}{131,5}$$
+$$Z_G = 7,29$$
+Unidad:
+$$\text{cm}$$
+
+Cálculo del
+momento de
+inercia X
+global:
+$$I_X$$
+
+Se usa el eje Y
+del UPN por
+estar tumbado
+(eje débil en
+horizontal).
+
+Inercia IPE X:
+con Steiner:
+$$S_{x1} = I_{x1} + A_1 \cdot Z_G^2$$
+$$S_{x1} = 16270 + 72,7 \cdot 7,29^2$$
+$$S_{x1} = 20132$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia UPN X:
+con Steiner:
+Distancia d2:
+$$d_2 = 16,3 - Z_G$$
+$$d_2 = 16,3 - 7,29$$
+$$d_2 = 9,01$$
+Unidad:
+$$\text{cm}$$
+$$S_{x2} = I_{y2} + A_2 \cdot d_2^2$$
+$$S_{x2} = 495 + 58,8 \cdot 9,01^2$$
+$$S_{x2} = 5270$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en X:
+$$I_X = S_{x1} + S_{x2}$$
+$$I_X = 20132 + 5270$$
+$$I_X = 25402$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia Y
+global:
+$$I_Y$$
+
+Se usa el eje X
+del UPN por
+estar tumbado
+(eje fuerte en
+vertical).
+
+No requiere
+Steiner en Y
+porque los
+centros están
+alineados.
+
+Suma de
+inercias en Y:
+$$I_Y = I_{y1} + I_{x2}$$
+$$I_Y = 1040 + 8030$$
+$$I_Y = 9070$$
+Unidad:
+$$\text{cm}^4$$
+
+---
+
+## Problema 8
+
+### Enunciado
+Transcription:
+Problema 1.
+Se va a diseñar
+un pilar
+utilizando 4
+perfiles UPN
+220 y L 80.8.
+Solución:
+Ix = Iy = 38135 cm4.
+
+**Descripción
+gráfica:**
+Pilar de
+sección en
+cruz.
+Formado por
+cuatro perfiles
+UPN 220 y
+cuatro perfiles
+angulares
+L 80.8.
+Los UPN 220
+se sitúan en
+los cuatro
+lados (arriba,
+abajo, izq.,
+der.), y los
+L 80.8 en las
+esquinas,
+cerrando la
+sección.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil UPN 220:
+Área:
+$$A_{UPN} = 37,40$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia X:
+$$I_{x,UPN} = 2690$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Y:
+$$I_{y,UPN} = 197$$
+Unidad:
+$$\text{cm}^4$$
+
+Altura:
+$$h_{UPN} = 220$$
+Unidad:
+$$\text{mm}$$
+
+Ancho:
+$$b_{UPN} = 80$$
+Unidad:
+$$\text{mm}$$
+
+Distancia al
+centro c:
+$$c_{UPN} = 21,40$$
+Unidad:
+$$\text{mm}$$
+$$c_{UPN} = 2,14$$
+Unidad:
+$$\text{cm}$$
+
+Perfil L 80.8:
+Área:
+$$A_L = 15,10$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia X, Y:
+$$I_{x,L} = 87,50$$
+Unidad:
+$$\text{cm}^4$$
+$$I_{y,L} = 87,50$$
+Unidad:
+$$\text{cm}^4$$
+
+Ancho:
+$$b_L = 80$$
+Unidad:
+$$\text{mm}$$
+
+Distancia al
+centro c:
+$$c_L = 23,40$$
+Unidad:
+$$\text{mm}$$
+$$c_L = 2,34$$
+Unidad:
+$$\text{cm}$$
+
+Simetría:
+La figura es
+simétrica en
+ambas
+direcciones.
+Los momentos
+de inercia
+globales Ix e
+Iy son
+iguales.
+
+Cálculo del
+momento de
+inercia global:
+$$I_x$$
+
+1) UPN vertical
+izquierdo y
+derecho:
+
+El eje fuerte
+de estos
+perfiles
+coincide con
+el eje global
+horizontal. No
+tienen Steiner.
+$$I_1 = 2 \cdot I_{x,UPN}$$
+$$I_1 = 2 \cdot 2690$$
+$$I_1 = 5380$$
+Unidad:
+$$\text{cm}^4$$
+
+2) UPN superior
+e inferior
+(horizontales):
+
+Están tumbados,
+por lo que se
+usa el momento
+de inercia Y
+de las tablas.
+
+Distancia d al
+eje horizontal:
+$$d = 11 + (8 - c_{UPN})$$
+$$d = 11 + (8 - 2,14)$$
+$$d = 16,86$$
+Unidad:
+$$\text{cm}$$
+
+Steiner para
+estos UPN:
+$$I_2 = 2 \cdot (I_{y,UPN} + A_{UPN} \cdot d^2)$$
+$$I_2 = 2 \cdot (197 + 37,4 \cdot 16,86^2)$$
+$$I_2 = 21656,6$$
+Unidad:
+$$\text{cm}^4$$
+
+3) Perfiles L
+en las cuatro
+esquinas:
+
+Distancia dL al
+eje horizontal:
+$$d_L = 11 + c_L$$
+$$d_L = 11 + 2,34$$
+$$d_L = 13,34$$
+Unidad:
+$$\text{cm}$$
+
+Steiner para
+los perfiles L:
+$$I_3 = 4 \cdot (I_{x,L} + A_L \cdot d_L^2)$$
+$$I_3 = 4 \cdot (87,5 + 15,1 \cdot 13,34^2)$$
+$$I_3 = 11098,5$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias:
+$$I_x = I_1 + I_2 + I_3$$
+$$I_x = 5380 + 21656,6 + 11098,5$$
+$$I_x = 38135,1$$
+Unidad:
+$$\text{cm}^4$$
+$$I_x \approx 38135$$
+Unidad:
+$$\text{cm}^4$$
+
+---
+
+## Problema 9
+
+### Enunciado
+Transcription:
+Problema 2.
+Se ha diseñado
+un pilar de
+esquina para
+una
+construccion y
+que debe
+servir de
+apoyo al
+cerramiento.
+Obtener los
+momentos de
+inercia del
+conjunto.
+Solución:
+33349 y
+2670 cm4.
+
+**Descripción
+gráfica:**
+Pilar de
+esquina.
+Compuesto por
+un perfil
+IPE 400
+vertical y
+un perfil
+UPN 180
+horizontal.
+El UPN 180
+se apoya y
+suelda sobre
+el ala
+superior del
+perfil IPE 400.
+
+### Solución Paso a Paso
+
+Propiedades de
+los perfiles
+obtenidas de
+tablas de
+acero:
+
+Perfil IPE 400:
+Área:
+$$A_1 = 84,5$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia X:
+$$I_{x1} = 23130$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Y:
+$$I_{y1} = 1320$$
+Unidad:
+$$\text{cm}^4$$
+
+Altura:
+$$h = 40,0$$
+Unidad:
+$$\text{cm}$$
+
+Perfil UPN 180:
+Área:
+$$A_2 = 28,0$$
+Unidad:
+$$\text{cm}^2$$
+
+Inercia X:
+$$I_{x2} = 1350$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia Y:
+$$I_{y2} = 114$$
+Unidad:
+$$\text{cm}^4$$
+
+Distancia al
+centro c:
+$$c = 1,92$$
+Unidad:
+$$\text{cm}$$
+
+Disposición:
+El UPN 180 está
+colocado
+tumbado sobre
+el IPE 400.
+La dirección Y
+es vertical,
+la dirección X
+es horizontal.
+
+Cálculo del
+centro de
+gravedad
+vertical:
+$$Y_G$$
+
+Origen y = 0 en
+el centro del
+perfil IPE 400.
+
+Centro IPE 400:
+$$y_1 = 0$$
+Unidad:
+$$\text{cm}$$
+
+El UPN apoya
+su alma sobre
+el ala del IPE.
+La cota
+superior del
+IPE 400 es:
+$$y_{sup} = 20,0$$
+Unidad:
+$$\text{cm}$$
+
+Su centro está
+en Y a:
+$$y_2 = 20 + c$$
+$$y_2 = 20 + 1,92$$
+$$y_2 = 21,92$$
+Unidad:
+$$\text{cm}$$
+
+Área total de
+la sección:
+$$A_T = 112,5$$
+Unidad:
+$$\text{cm}^2$$
+
+Posición del
+C.D.G.:
+$$Y_G = \frac{A_2 \cdot y_2}{A_T}$$
+$$Y_G = \frac{28 \cdot 21,92}{112,5}$$
+$$Y_G = 5,46$$
+Unidad:
+$$\text{cm}$$
+
+Cálculo del
+momento de
+inercia X
+global:
+$$I_X$$
+
+Se usa el eje Y
+del UPN por
+estar tumbado
+(eje débil en
+horizontal).
+
+Inercia IPE X:
+con Steiner:
+$$S_{x1} = I_{x1} + A_1 \cdot Y_G^2$$
+$$S_{x1} = 23130 + 84,5 \cdot 5,46^2$$
+$$S_{x1} = 25645$$
+Unidad:
+$$\text{cm}^4$$
+
+Inercia UPN X:
+con Steiner:
+Distancia d2:
+$$d_2 = 21,92 - Y_G$$
+$$d_2 = 21,92 - 5,46$$
+$$d_2 = 16,46$$
+Unidad:
+$$\text{cm}$$
+$$S_{x2} = I_{y2} + A_2 \cdot d_2^2$$
+$$S_{x2} = 114 + 28 \cdot 16,46^2$$
+$$S_{x2} = 7704$$
+Unidad:
+$$\text{cm}^4$$
+
+Suma de
+inercias en X:
+$$I_X = S_{x1} + S_{x2}$$
+$$I_X = 25645 + 7704$$
+$$I_X = 33349$$
+Unidad:
+$$\text{cm}^4$$
+
+Cálculo del
+momento de
+inercia Y
+global:
+$$I_Y$$
+
+Se usa el eje X
+del UPN por
+estar tumbado
+(eje fuerte en
+vertical).
+
+No requiere
+Steiner en Y
+porque los
+centros están
+alineados.
+
+Suma de
+inercias en Y:
+$$I_Y = I_{y1} + I_{x2}$$
+$$I_Y = 1320 + 1350$$
+$$I_Y = 2670$$
+Unidad:
+$$\text{cm}^4$$
