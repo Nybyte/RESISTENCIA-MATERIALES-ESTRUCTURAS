@@ -1,0 +1,251 @@
+# Resistencia
+# de Materiales
+# - Formulario
+
+---
+
+## Índice
+* [Axil](#axil)
+* [Deflexiones](#deflexiones)
+* [Pandeo](#pandeo)
+* [F. Simple](#f-simple)
+* [F. Esviada](#f-esviada)
+* [Tensiones](#tensiones)
+
+---
+
+## Axil
+
+Deformación:
+$$\epsilon = \frac{\Delta L}{L}$$
+
+Deformación
+transversal:
+$$\epsilon' = \frac{\Delta D}{D}$$
+
+Coeficiente
+de Poisson:
+$$\nu = -\frac{\epsilon'}{\epsilon}$$
+
+Alargamiento:
+$$\Delta L = \frac{N_x \cdot L}{E \cdot A}$$
+
+Donde:
+* $$N_x$$:
+Esfuerzo axil.
+Unidad:
+$$\text{N}$$
+
+* $$L$$:
+Longitud.
+Unidad:
+$$\text{m}$$
+
+* $$E$$:
+Módulo Young.
+Unidad:
+$$\text{Pa}$$
+
+* $$A$$:
+Área de
+la sección.
+Unidad:
+$$\text{m}^2$$
+
+---
+
+## Deflexiones
+
+Ecuación de la
+línea elástica:
+$$E I \frac{d^2 v}{d x^2} = M_z$$
+
+Giro relativo
+entre A y B:
+$$\theta_{B/A} = \frac{1}{E I} \int_{A}^{B} M_z \cdot dx = \frac{\mathcal{A}_{A}^{B}}{E I}$$
+
+Desviación
+tangencial:
+$$t_{B/A} = \frac{1}{E I} \int_{A}^{B} M_z \cdot dx \cdot x_1 = \frac{\mathcal{A}_{A}^{B} \cdot \overline{x}_1}{E I}$$
+
+Donde:
+* $$\mathcal{A}_{A}^{B}$$:
+Área del
+diagrama de
+momentos.
+Unidad:
+$$\text{N}\cdot\text{m}^2$$
+
+* $$\overline{x}_1$$:
+Distancia al
+centro de
+gravedad a B.
+Unidad:
+$$\text{m}$$
+
+* $$E I$$:
+Rigidez a la
+flexión.
+Unidad:
+$$\text{N}\cdot\text{m}^2$$
+
+---
+
+## Pandeo
+
+Carga máxima
+axil:
+$$P_{max} = \sigma_e \cdot A$$
+
+Carga crítica
+de Euler:
+$$P_{cr} = \frac{\pi^2 E I}{(\beta L)^2}$$
+
+Curva de Euler:
+Tensión
+crítica:
+$$\sigma_{cr} = \frac{P_{cr}}{A} = \frac{\pi^2 E}{\lambda^2}$$
+
+Radio de giro:
+$$i = \sqrt{\frac{I}{A}}$$
+
+Esbeltez:
+$$\lambda = \frac{L}{i}$$
+
+Donde:
+* $$\beta$$:
+Coeficiente
+de fijación
+de apoyos.
+
+* $$\lambda$$:
+Esbeltez de
+la barra.
+
+* $$i$$:
+Radio de
+giro mínimo.
+Unidad:
+$$\text{m}$$
+
+---
+
+## F. Simple
+
+Tensión normal
+viga curvada:
+$$\sigma = -\frac{y}{\rho} E$$
+
+Tensión normal
+en flexión:
+$$\sigma = -\frac{M_z}{I_z} y$$
+
+Tensión normal
+máxima:
+$$\sigma = \frac{M_z}{W_z}$$
+
+Flexión
+compuesta
+(con axil):
+$$\sigma_p = \frac{N_x}{A} - \frac{M_z}{I_z} y$$
+
+Tensión
+tangencial
+(Colignon):
+$$\tau = \frac{V_y \cdot Q}{b \cdot I_z}$$
+
+Momento
+estático:
+$$Q = A \cdot \overline{y}$$
+
+Donde:
+* $$I_z$$:
+Momento de
+inercia.
+Unidad:
+$$\text{m}^4$$
+
+* $$W_z$$:
+Módulo
+resistente.
+Unidad:
+$$\text{m}^3$$
+
+* $$V_y$$:
+Esfuerzo
+cortante.
+Unidad:
+$$\text{N}$$
+
+* $$Q$$:
+Momento
+estático.
+Unidad:
+$$\text{m}^3$$
+
+* $$b$$:
+Ancho de la
+sección.
+Unidad:
+$$\text{m}$$
+
+---
+
+## F. Esviada
+
+Tensión normal
+por momento
+flexor:
+$$\sigma = \frac{M_y}{I_y} z$$
+
+$$\sigma = \frac{M_y}{W_y}$$
+
+$$\sigma = -\frac{M_z}{I_z} y$$
+
+$$\sigma = \frac{M_z}{W_z}$$
+
+Flexión esviada
+pura:
+$$\sigma_p = \frac{M_y}{I_y} z - \frac{M_z}{I_z} y$$
+
+$$\sigma_p = \frac{M_y}{W_y} + \frac{M_z}{W_z}$$
+
+Flexión esviada
+compuesta
+(con axil):
+$$\sigma_p = \frac{N_x}{A} + \frac{M_y}{I_y} z - \frac{M_z}{I_z} y$$
+
+Donde:
+* $$M_y, M_z$$:
+Momentos
+flectores.
+Unidad:
+$$\text{N}\cdot\text{m}$$
+
+* $$z, y$$:
+Coordenadas
+del punto.
+Unidad:
+$$\text{m}$$
+
+---
+
+## Tensiones
+
+Tensión de
+comparación
+(Von Mises):
+$$\sigma_{co} = \sqrt{\sigma_x^2 + 3 \tau_{xy}^2} \le \sigma_e$$
+
+Donde:
+* $$\sigma_{co}$$:
+Tensión
+comparativa.
+Unidad:
+$$\text{Pa}$$
+
+* $$\sigma_e$$:
+Límite
+elástico.
+Unidad:
+$$\text{Pa}$$
