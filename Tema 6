@@ -1,0 +1,1242 @@
+# Tema 6: Mecánica de Fluidos - Problemas Resueltos de Flujo Interno
+
+## Índice de Contenidos
+1. [Conceptos Clave y Fórmulas](#conceptos-clave-y-fórmulas)
+2. [Problema 1: Bombeo desde un Lago (Cavitación)](#problema-1-bombeo-desde-un-lago-cavitación)
+3. [Problema 2: Potencia de una Bomba](#problema-2-potencia-de-una-bomba)
+4. [Problema 3: Circulación con Filtro y Bomba](#problema-3-circulación-con-filtro-y-bomba)
+5. [Problema 4: Nivel del Piezómetro](#problema-4-nivel-del-piezómetro)
+6. [Problema 5: Evitar Cavitación en Sifón](#problema-5-evitar-cavitación-en-sifón)
+7. [Problema Propuesto 1: Altura Mínima de Tanque](#problema-propuesto-1-altura-mínima-de-tanque)
+8. [Problema Propuesto 2: Caudal de Boquilla (Aspersión)](#problema-propuesto-2-caudal-de-boquilla-aspersión)
+9. [Problema Propuesto 3: Diámetro Necesario](#problema-propuesto-3-diámetro-necesario)
+
+---
+
+## Conceptos Clave y Fórmulas
+
+### Ecuación de
+### Energía (SI):
+$$\frac{P_1}{\rho g} + z_1 + \frac{V_1^2}{2g} + h_p = \frac{P_2}{\rho g} + z_2 + \frac{V_2^2}{2g} + h_L$$
+* $$h_p$$:
+Carga de bomba.
+* $$h_L$$:
+Pérdida carga.
+
+### Pérdida Fricción
+### (Darcy):
+$$h_f = f \cdot \frac{L}{D} \cdot \frac{V^2}{2g}$$
+* $$f$$:
+Factor fricción.
+* $$L$$:
+Longitud.
+* $$D$$:
+Diámetro.
+
+### Pérdidas
+### Menores:
+$$h_m = K \cdot \frac{V^2}{2g}$$
+* $$K$$:
+Coeficiente.
+
+---
+
+## Problema 1: Bombeo desde un Lago (Cavitación)
+
+### Enunciado
+Determinar la
+longitud máxima
+de la tubería
+de entrada para
+evitar la
+cavitación en
+la bomba.
+
+### Datos
+Lago:
+$$z_1 = 650\ \text{m}$$
+Bomba:
+$$z_2 = 653\ \text{m}$$
+Diámetro:
+$$D = 0.07\ \text{m}$$
+Rugosidad:
+$$\epsilon = 0.08\ \text{mm}$$
+Caudal:
+$$Q = 0.011\ \text{m}^3/\text{s}$$
+P vapor:
+$$P_{\text{vapor}} = 1.228\ \text{kPa}$$
+Densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+Viscosidad:
+$$\nu = 1.307\cdot 10^{-6}\ \text{m}^2/\text{s}$$
+P atm:
+$$P_{\text{atm}} = 101.325\ \text{kPa}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+1. Velocidad:
+Para hallar la
+velocidad del
+fluido en la
+tubería,
+aplicamos la
+ecuación de
+continuidad
+que relaciona
+el caudal con
+el área de
+la sección
+transversal:
+$$Q = V \cdot A$$
+Despejamos
+la velocidad:
+$$V = \frac{Q}{A}$$
+El área de
+un conducto
+circular de
+diámetro D
+es:
+$$A = \frac{\pi \cdot D^2}{4}$$
+Sustituyendo
+la expresión
+del área en
+la de la
+velocidad:
+$$V = \frac{4Q}{\pi D^2}$$
+Introducimos
+los valores
+de caudal y
+diámetro:
+$$V = \frac{4 \cdot 0.011}{\pi \cdot (0.07)^2}$$
+$$V = 2.858\ \text{m/s}$$
+
+2. Reynolds:
+Calculamos el
+número de
+Reynolds, que
+caracteriza el
+régimen del
+flujo (laminar
+o turbulento):
+$$Re = \frac{V \cdot D}{\nu}$$
+Sustituyendo:
+$$Re = \frac{2.858 \cdot 0.07}{1.307\cdot 10^{-6}}$$
+$$Re = 1.53\cdot 10^5$$
+Al ser mayor
+de 4000, el
+flujo es
+turbulento.
+
+3. Rugosidad
+relativa:
+Para calcular
+la fricción,
+obtenemos la
+rugosidad
+relativa
+poniendo ambas
+longitudes en
+milímetros:
+$$\frac{\epsilon}{D} = \frac{0.08\ \text{mm}}{70\ \text{mm}}$$
+$$\frac{\epsilon}{D} = 0.00114$$
+
+4. Fricción f:
+Con los
+valores de
+Reynolds y
+rugosidad
+relativa,
+buscamos en
+el diagrama
+de Moody
+el factor
+de fricción:
+$$f \approx 0.0225$$
+
+5. Bernoulli:
+Aplicamos la
+ecuación de
+energía desde
+la superficie
+del lago (1)
+hasta la
+entrada de
+la bomba (2):
+$$\frac{P_1}{\rho g} + z_1 + \frac{V_1^2}{2g} = \frac{P_2}{\rho g} + z_2 + \frac{V_2^2}{2g} + h_L$$
+La superficie
+está abierta
+a la atmósfera
+y es de gran
+tamaño:
+$$P_1 = P_{\text{atm}}$$
+$$V_1 \approx 0$$
+Para evitar
+la cavitación,
+la presión en
+la bomba no
+debe caer de la
+presión de
+vapor del agua:
+$$P_2 = P_{\text{vapor}}$$
+Las pérdidas
+del tramo son
+por fricción
+(Darcy-Weisbach):
+$$h_L = f \cdot \frac{L}{D} \cdot \frac{V_2^2}{2g}$$
+Sustituimos
+los términos:
+$$\frac{101325}{1000 \cdot 9.81} + 650 = \frac{1228}{1000 \cdot 9.81} + 653 + \frac{(2.858)^2}{2 \cdot 9.81} + h_L$$
+$$10.33 + 650 = 0.125 + 653 + 0.416 + h_L$$
+$$660.33 = 653.541 + h_L$$
+Despejamos
+la pérdida:
+$$h_L = 6.789\ \text{m}$$
+Sustituimos en
+Darcy para
+obtener L:
+$$h_L = 0.0225 \cdot \frac{L}{0.07} \cdot 0.416$$
+$$6.789 = 0.1337 \cdot L$$
+$$L = \frac{6.789}{0.1337}$$
+$$L \approx 50.78\ \text{m}$$
+(Aprox. PDF:
+$$L \approx 51.05\ \text{m}$$
+)
+
+---
+
+## Problema 2: Potencia de una Bomba
+
+### Enunciado
+Determinar la
+potencia que la
+bomba entrega
+al agua.
+
+### Datos
+Bomba carga:
+$$H_B = 76.2\ \text{m}$$
+Diferencia z:
+$$\Delta z = 60.96\ \text{m}$$
+Longitud:
+$$L = 152.4\ \text{m}$$
+Diámetro:
+$$D = 0.2286\ \text{m}$$
+Rugosidad:
+$$\epsilon = 0\ \text{m}$$
+Densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+Viscosidad:
+$$\nu = 1.004\cdot 10^{-6}\ \text{m}^2/\text{s}$$
+Accesorios:
+$$K_{\text{valve}} = 5.0$$
+$$K_{\text{elbow}} = 1.5$$
+$$K_{\text{ent}} = 0.8$$
+$$K_{\text{exit}} = 1.0$$
+
+### Resolución
+
+1. Balance:
+Planteamos la
+ecuación de
+energía entre
+las superficies
+de ambos
+estanques (1
+y 2):
+$$\frac{P_1}{\rho g} + z_1 + \frac{V_1^2}{2g} + H_B = \frac{P_2}{\rho g} + z_2 + \frac{V_2^2}{2g} + h_L$$
+Ambos están
+abiertos a la
+atmósfera y
+tienen grandes
+dimensiones:
+$$P_1 = P_2 = P_{\text{atm}}$$
+$$V_1 = V_2 \approx 0$$
+Por lo tanto,
+la ecuación
+se reduce a:
+$$H_B = z_2 - z_1 + h_L$$
+Sustituyendo
+los valores
+de elevación:
+$$76.2 = 60.96 + h_L$$
+$$h_L = 15.24\ \text{m}$$
+
+2. Pérdidas:
+Sumamos todos
+los coeficientes
+de pérdida
+menor por
+accesorios:
+$$\sum K = K_{\text{valve}} + K_{\text{elbow}} + K_{\text{ent}} + K_{\text{exit}}$$
+$$\sum K = 5.0 + 1.5 + 0.8 + 1.0$$
+$$\sum K = 8.3$$
+La pérdida de
+carga total
+es la suma de
+fricción y
+pérdidas
+menores:
+$$h_L = \left( f \cdot \frac{L}{D} + \sum K \right) \cdot \frac{V^2}{2g}$$
+Calculamos el
+término L/D:
+$$\frac{L}{D} = \frac{152.4}{0.2286}$$
+$$\frac{L}{D} = 666.67$$
+Sustituimos en
+la ecuación de
+pérdida:
+$$15.24 = (666.67 \cdot f + 8.3) \cdot \frac{V^2}{2 \cdot 9.81}$$
+$$15.24 = (666.67 \cdot f + 8.3) \cdot \frac{V^2}{19.62}$$
+
+3. Iteración:
+Como la
+tubería es
+lisa
+$$(\epsilon = 0)$$
+el factor
+de fricción
+f depende
+únicamente
+del número de
+Reynolds Re.
+Comenzamos el
+proceso
+iterativo:
+
+Iteración 1:
+Suponemos un
+valor inicial
+estimado de
+fricción:
+$$f = 0.015$$
+Sustituyendo
+en la fórmula
+de pérdida:
+$$15.24 = (666.67 \cdot 0.015 + 8.3) \cdot \frac{V^2}{19.62}$$
+$$15.24 = (10 + 8.3) \cdot \frac{V^2}{19.62}$$
+$$15.24 = 18.3 \cdot \frac{V^2}{19.62}$$
+Despejamos la
+velocidad V:
+$$V = 4.04\ \text{m/s}$$
+Calculamos el
+Reynolds para
+esta velocidad:
+$$Re = \frac{V \cdot D}{\nu}$$
+$$Re = \frac{4.04 \cdot 0.2286}{1.004\cdot 10^{-6}}$$
+$$Re = 9.2\cdot 10^5$$
+Buscamos en la
+curva lisa de
+Moody un nuevo
+valor de f:
+$$f_{\text{nuevo}} \approx 0.0118$$
+
+Iteración 2:
+Usamos el
+nuevo factor
+$$f = 0.0118$$
+Sustituyendo
+en la pérdida:
+$$15.24 = (666.67 \cdot 0.0118 + 8.3) \cdot \frac{V^2}{19.62}$$
+$$15.24 = (7.87 + 8.3) \cdot \frac{V^2}{19.62}$$
+Despejamos la
+velocidad:
+$$V = 4.30\ \text{m/s}$$
+Re-evaluamos
+el Reynolds:
+$$Re = \frac{4.30 \cdot 0.2286}{1.004\cdot 10^{-6}}$$
+$$Re = 9.79\cdot 10^5$$
+Buscamos en la
+curva lisa de
+Moody el nuevo
+valor de f:
+$$f_{\text{nuevo}} \approx 0.0116$$
+
+Iteración 3:
+Usamos
+$$f = 0.0116$$
+Sustituyendo:
+$$15.24 = (666.67 \cdot 0.0116 + 8.3) \cdot \frac{V^2}{19.62}$$
+$$15.24 = (7.73 + 8.3) \cdot \frac{V^2}{19.62}$$
+Despejamos:
+$$V = 4.32\ \text{m/s}$$
+Reynolds:
+$$Re = 9.83\cdot 10^5$$
+El valor de
+f se
+estabiliza en:
+$$f \approx 0.0116$$
+La velocidad
+convergente es
+$$V = 4.32\ \text{m/s}$$
+Calculamos el
+caudal
+multiplicando
+por el área:
+$$Q = V \cdot \frac{\pi D^2}{4}$$
+$$Q = 4.32 \cdot \frac{\pi \cdot (0.2286)^2}{4}$$
+$$Q = 4.32 \cdot 0.04104$$
+$$Q = 0.177\ \text{m}^3/\text{s}$$
+
+4. Potencia:
+La potencia
+útil entregada
+por la bomba
+al agua es:
+$$P = \rho \cdot g \cdot Q \cdot H_B$$
+Sustituyendo:
+$$P = 1000 \cdot 9.81 \cdot 0.177 \cdot 76.2$$
+$$P = 132338\ \text{W}$$
+$$P \approx 132.3\ \text{kW}$$
+
+---
+
+## Problema 3: Circulación con Filtro y Bomba
+
+### Enunciado
+El agua circula
+desde un tanque
+a través de
+un filtro y de
+vuelta al
+tanque. La
+bomba añade
+$$200\ \text{ft}\cdot\text{lb/s}$$
+Determine el
+caudal.
+
+### Datos
+Bomba potencia:
+$$\dot{W}_p = 200\ \text{ft}\cdot\text{lb/s}$$
+Longitud:
+$$L = 200\ \text{ft}$$
+Diámetro:
+$$D = 0.1\ \text{ft}$$
+Rugosidad rel:
+$$\frac{\epsilon}{D} = 0.01$$
+Peso esp:
+$$\gamma = 62.4\ \text{lb/ft}^3$$
+Viscosidad:
+$$\mu = 2.34\cdot 10^{-5}\ \text{lb}\cdot\text{s/ft}^2$$
+Gravedad:
+$$g = 32.2\ \text{ft/s}^2$$
+Accesorios:
+$$K_{\text{ent}} = 0.8$$
+$$K_{\text{filter}} = 12.0$$
+$$K_{\text{valve}} = 6.0$$
+$$K_{\text{elbow}} = 1.5$$
+$$K_{\text{exit}} = 1.0$$
+
+### Resolución
+
+1. Balance:
+Aplicamos
+la ecuación de
+energía entre
+la superficie
+inicial (1)
+y la final (2)
+del mismo
+tanque:
+$$\frac{P_1}{\gamma} + z_1 + \frac{V_1^2}{2g} + h_p = \frac{P_2}{\gamma} + z_2 + \frac{V_2^2}{2g} + h_L$$
+Dado que
+se inicia y
+termina en el
+mismo nivel
+libre del
+tanque:
+$$P_1 = P_2 = P_{\text{atm}}$$
+$$z_1 = z_2$$
+$$V_1 = V_2 \approx 0$$
+Por lo tanto, la
+carga de la
+bomba es igual
+a las pérdidas
+de carga:
+$$h_p = h_L$$
+Relacionamos la
+carga con la
+potencia añadida
+al fluido:
+$$h_p = \frac{\dot{W}_p}{\gamma \cdot Q}$$
+Sustituyendo:
+$$h_p = \frac{200}{62.4 \cdot Q}$$
+$$h_p = \frac{3.205}{Q}$$
+
+2. Pérdidas:
+Sumamos todos
+los coeficientes
+de pérdida
+menor:
+$$\sum K = K_{\text{ent}} + K_{\text{filter}} + K_{\text{valve}} + K_{\text{elbow}} + K_{\text{exit}}$$
+$$\sum K = 0.8 + 12 + 6 + 1.5 + 1.0$$
+$$\sum K = 21.3$$
+La pérdida de
+carga total
+es:
+$$h_L = \left( f \cdot \frac{L}{D} + \sum K \right) \cdot \frac{V^2}{2g}$$
+Calculamos el
+cociente L/D:
+$$\frac{L}{D} = \frac{200}{0.1} = 2000$$
+Relacionamos la
+velocidad del
+tubo con el
+caudal usando
+la sección:
+$$V = \frac{Q}{A} = \frac{4Q}{\pi D^2}$$
+$$V = \frac{4Q}{\pi \cdot (0.1)^2}$$
+$$V = 127.32 \cdot Q$$
+Calculamos la
+cabeza de
+velocidad:
+$$\frac{V^2}{2g} = \frac{(127.32 \cdot Q)^2}{2 \cdot 32.2}$$
+$$\frac{V^2}{2g} = \frac{16210.39 \cdot Q^2}{64.4}$$
+$$\frac{V^2}{2g} = 251.7 \cdot Q^2$$
+Sustituyendo en
+la ecuación
+de pérdidas:
+$$h_L = (2000 \cdot f + 21.3) \cdot 251.7 \cdot Q^2$$
+
+3. Ecuación Q:
+Igualamos la
+carga de bomba
+a las pérdidas:
+$$\frac{3.205}{Q} = 251.7 \cdot (2000 f + 21.3) \cdot Q^2$$
+Despejamos Q al
+cubo:
+$$Q^3 = \frac{3.205}{251.7 \cdot (2000 f + 21.3)}$$
+$$Q^3 = \frac{0.01273}{2000 f + 21.3}$$
+
+4. Iteración:
+Como la
+rugosidad
+relativa es alta
+$$(\frac{\epsilon}{D} = 0.01)$$
+el factor f en
+régimen
+turbulento
+estará cerca
+del límite.
+Asumimos f del
+límite turb:
+$$f = 0.038$$
+Sustituyendo:
+$$Q^3 = \frac{0.01273}{2000 \cdot 0.038 + 21.3}$$
+$$Q^3 = \frac{0.01273}{76 + 21.3}$$
+$$Q^3 = \frac{0.01273}{97.3}$$
+$$Q^3 = 1.308\cdot 10^{-4}$$
+$$Q = 0.0508\ \text{ft}^3/\text{s}$$
+Calculamos la
+velocidad para
+este caudal:
+$$V = 127.32 \cdot 0.0508$$
+$$V = 6.47\ \text{ft/s}$$
+Calculamos el
+Reynolds.
+La densidad
+de masa es:
+$$\rho_m = \frac{\gamma}{g}$$
+$$\rho_m = \frac{62.4}{32.2}$$
+$$\rho_m = 1.938\ \text{slug/ft}^3$$
+El Reynolds es:
+$$Re = \frac{\rho_m \cdot V \cdot D}{\mu}$$
+$$Re = \frac{1.938 \cdot 6.47 \cdot 0.1}{2.34\cdot 10^{-5}}$$
+$$Re = 5.36\cdot 10^4$$
+Buscamos en el
+diagrama para
+Re y
+$$\frac{\epsilon}{D} = 0.01$$
+$$f_{\text{nuevo}} \approx 0.040$$
+
+Iteración 2:
+Usamos el
+nuevo factor:
+$$f = 0.040$$
+Sustituyendo:
+$$Q^3 = \frac{0.01273}{2000 \cdot 0.040 + 21.3}$$
+$$Q^3 = \frac{0.01273}{80 + 21.3}$$
+$$Q^3 = \frac{0.01273}{101.3}$$
+$$Q^3 = 1.257\cdot 10^{-4}$$
+$$Q = 0.0501\ \text{ft}^3/\text{s}$$
+Velocidad:
+$$V = 127.32 \cdot 0.0501$$
+$$V = 6.38\ \text{ft/s}$$
+Reynolds:
+$$Re = \frac{1.938 \cdot 6.38 \cdot 0.1}{2.34\cdot 10^{-5}}$$
+$$Re = 5.28\cdot 10^4$$
+Para este Re y
+rugosidad, el
+factor f se
+mantiene en:
+$$f \approx 0.040$$
+El caudal
+convergente es:
+$$Q \approx 0.050\ \text{ft}^3/\text{s}$$
+
+---
+
+## Problema 4: Nivel del Piezómetro
+
+### Enunciado
+Determine la
+altura h a
+la que sube
+el agua en
+el piezómetro.
+
+### Datos
+Velocidad:
+$$V = 4.57\ \text{m/s}$$
+Diámetro:
+$$D = 0.0508\ \text{m}$$
+Rugosidad rel:
+$$\frac{\epsilon}{D} = 0.004$$
+Salida K:
+$$K_{\text{exit}} = 1.0$$
+Longitud:
+$$L = 2.44\ \text{m}$$
+Profundidad:
+$$z_2 = 2.44\ \text{m}$$
+Densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+Viscosidad:
+$$\nu = 1.004\cdot 10^{-6}\ \text{m}^2/\text{s}$$
+
+### Resolución
+
+1. Reynolds:
+Calculamos el
+Reynolds para
+conocer el
+estado del
+flujo:
+$$Re = \frac{V \cdot D}{\nu}$$
+Sustituyendo:
+$$Re = \frac{4.57 \cdot 0.0508}{1.004\cdot 10^{-6}}$$
+$$Re = 2.31\cdot 10^5$$
+Con Reynolds y
+$$\frac{\epsilon}{D} = 0.004$$
+buscamos f en
+el diagrama de
+Moody:
+$$f \approx 0.029$$
+
+2. Pérdidas:
+Calculamos la
+pérdida total
+(fricción más
+la pérdida a
+la salida del
+tanque):
+$$h_L = \left( f \cdot \frac{L}{D} + K_{\text{exit}} \right) \cdot \frac{V^2}{2g}$$
+Sustituyendo
+los valores:
+$$h_L = \left( 0.029 \cdot \frac{2.44}{0.0508} + 1.0 \right) \cdot \frac{(4.57)^2}{2 \cdot 9.81}$$
+$$h_L = (1.393 + 1.0) \cdot 1.064$$
+$$h_L = 2.546\ \text{m}$$
+
+3. Bernoulli:
+Aplicamos
+Bernoulli
+desde la base
+del tubo del
+piezómetro (1,
+dentro de la
+tubería) hasta
+la superficie
+del tanque (2):
+$$\frac{P_1}{\gamma} + z_1 + \frac{V_1^2}{2g} = \frac{P_2}{\gamma} + z_2 + \frac{V_2^2}{2g} + h_L$$
+Elegimos el
+eje del tubo
+como cota de
+referencia:
+$$z_1 = 0$$
+La altura en
+el piezómetro
+abierto mide la
+carga de
+presión:
+$$\frac{P_1}{\gamma} = h$$
+La velocidad en
+la tubería es:
+$$V_1 = V = 4.57\ \text{m/s}$$
+En la
+superficie
+libre del
+tanque:
+$$P_2 = 0\ \text{(man)}$$
+$$z_2 = 2.44\ \text{m}$$
+$$V_2 \approx 0$$
+Sustituyendo
+en Bernoulli:
+$$h + 0 + \frac{V^2}{2g} = 0 + z_2 + 0 + h_L$$
+$$h + 1.064 = 2.44 + 2.546$$
+$$h + 1.064 = 4.986$$
+$$h = 4.986 - 1.064$$
+$$h = 3.922\ \text{m}$$
+
+---
+
+## Problema 5: Evitar Cavitación en Sifón
+
+### Enunciado
+Determine la
+profundidad
+máxima h de
+descarga sin
+cavitación.
+
+### Datos
+Longitud tot:
+$$L_{\text{total}} = 40\ \text{m}$$
+L vértice:
+$$L_{\text{up}} = 10\ \text{m}$$
+Diámetro:
+$$D = 0.012\ \text{m}$$
+Fricción f:
+$$f = 0.020$$
+Densidad:
+$$\rho = 996\ \text{kg/m}^3$$
+P vapor abs:
+$$P_{\text{vap}} = 4.243\ \text{kPa}$$
+P atm abs:
+$$P_{\text{atm}} = 101\ \text{kPa}$$
+Nivel tanque:
+$$z_1 = 3\ \text{m}$$
+H vértice:
+$$z_2 = 10\ \text{m}$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+1. Vértice (2):
+El punto de
+mínima presión
+del sistema es
+el vértice
+superior.
+Para evitar la
+cavitación, la
+presión no
+debe caer del
+límite de la
+presión de
+vapor:
+$$P_2 = P_{\text{vap}}$$
+Planteamos
+Bernoulli de
+tanque (1) a
+vértice (2) en
+presiones
+absolutas:
+$$\frac{P_1}{\rho g} + z_1 + \frac{V_1^2}{2g} = \frac{P_2}{\rho g} + z_2 + \frac{V_2^2}{2g} + h_{L,1-2}$$
+Sustituyendo:
+* $$P_1 = P_{\text{atm}}$$
+* $$V_1 \approx 0$$
+* $$P_2 = P_{\text{vap}}$$
+* $$V_2 = V$$
+Las pérdidas
+en el tramo de
+subida son:
+$$h_{L,1-2} = f \cdot \frac{L_{\text{up}}}{D} \cdot \frac{V^2}{2g}$$
+Introducimos
+las variables:
+$$\frac{101000}{996 \cdot 9.81} + 3 = \frac{4243}{996 \cdot 9.81} + 10 + \frac{V^2}{2g} + f \frac{L_{\text{up}}}{D} \frac{V^2}{2g}$$
+$$\frac{101000}{9770.76} + 3 = \frac{4243}{9770.76} + 10 + \frac{V^2}{2g} \left( 1 + f \frac{L_{\text{up}}}{D} \right)$$
+$$10.337 + 3 = 0.434 + 10 + \frac{V^2}{2g} \left( 1 + 0.020 \cdot \frac{10}{0.012} \right)$$
+$$13.337 = 10.434 + \frac{V^2}{2g} \cdot (1 + 16.67)$$
+$$13.337 - 10.434 = 17.67 \cdot \frac{V^2}{2g}$$
+$$2.903 = 17.67 \cdot \frac{V^2}{2g}$$
+Despejamos la
+cabeza de
+velocidad
+máxima:
+$$\frac{V^2}{2g} = 0.1643\ \text{m}$$
+
+2. Salida (3):
+Aplicamos
+Bernoulli
+desde la
+superficie
+del tanque (1)
+hasta la
+salida de la
+tubería (3):
+$$\frac{P_1}{\rho g} + z_1 + \frac{V_1^2}{2g} = \frac{P_3}{\rho g} + z_3 + \frac{V_3^2}{2g} + h_{L,\text{total}}$$
+A la salida, la
+presión es
+atmosférica:
+$$P_3 = P_{\text{atm}}$$
+Las presiones
+se cancelan.
+La velocidad
+de salida es:
+$$V_3 = V$$
+La cota de
+salida es:
+$$z_3 = -h$$
+Sustituyendo
+los términos:
+$$z_1 = z_3 + \frac{V^2}{2g} + f \frac{L_{\text{total}}}{D} \frac{V^2}{2g}$$
+$$3 = -h + \frac{V^2}{2g} \left( 1 + f \frac{L_{\text{total}}}{D} \right)$$
+Sustituimos
+el valor de la
+cabeza de
+velocidad:
+$$3 + h = 0.1643 \left( 1 + 0.020 \cdot \frac{40}{0.012} \right)$$
+$$3 + h = 0.1643 \cdot (1 + 66.67)$$
+$$3 + h = 0.1643 \cdot 67.67$$
+$$3 + h = 11.12\ \text{m}$$
+$$h = 8.12\ \text{m}$$
+La profundidad
+máxima de la
+salida es:
+$$h = 8.12\ \text{m}$$
+
+---
+
+## Problema Propuesto 1: Altura Mínima de Tanque
+
+### Enunciado
+Determine la
+altura mínima
+h del tanque
+para que la
+presión en
+sección (2)
+no caiga de
+$$4.14\ \text{bar}$$
+cuando el
+caudal es
+$$Q = 0.0283\ \text{m}^3/\text{s}$$
+suponiendo:
+a) Pérdidas
+menores
+despreciables.
+b) Pérdidas
+menores no
+despreciables.
+
+### Datos
+Densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+Viscosidad:
+$$\nu = 1.004\cdot 10^{-6}\ \text{m}^2/\text{s}$$
+Accesorios K:
+$$K_{\text{Ltotal}} = 5.2$$
+P superficie:
+$$P_1 = 1\ \text{bar}$$
+$$P_1 = 10^5\ \text{Pa}$$
+P sección 2:
+$$P_2 = 4.14\ \text{bar}$$
+$$P_2 = 4.14\cdot 10^5\ \text{Pa}$$
+Diámetro:
+$$D = 152.4\ \text{mm}$$
+$$D = 0.1524\ \text{m}$$
+Caudal:
+$$Q = 0.0283\ \text{m}^3/\text{s}$$
+Elevación 2:
+$$z_2 = 1.83\ \text{m}$$
+L horizontal:
+$$L_h = 457.2\ \text{m}$$
+
+### Resolución
+
+1. Parámetros:
+Calculamos la
+velocidad del
+agua en la
+tubería.
+El área de la
+sección es:
+$$A = \frac{\pi D^2}{4}$$
+$$A = \frac{\pi \cdot (0.1524)^2}{4}$$
+$$A = 0.01824\ \text{m}^2$$
+La velocidad
+es:
+$$V = \frac{Q}{A}$$
+$$V = \frac{0.0283}{0.01824}$$
+$$V = 1.5515\ \text{m/s}$$
+Calculamos la
+cabeza de
+velocidad:
+$$\frac{V^2}{2g} = \frac{(1.5515)^2}{2 \cdot 9.81}$$
+$$\frac{V^2}{2g} = 0.1227\ \text{m}$$
+Calculamos el
+Reynolds para
+conocer el
+factor f:
+$$Re = \frac{V \cdot D}{\nu}$$
+$$Re = \frac{1.5515 \cdot 0.1524}{1.004\cdot 10^{-6}}$$
+$$Re = 2.355\cdot 10^5$$
+Al ser una
+tubería lisa de
+plástico, el
+factor f de
+Moody es:
+$$f \approx 0.0150$$
+
+2. Longitud:
+La longitud
+total de la
+tubería es la
+suma del tramo
+vertical más
+el horizontal.
+El tramo
+vertical va
+desde la base
+del tanque (h)
+al suelo y
+luego sube al
+tubo (1.83 m):
+$$L_{\text{vert}} = h - 1.83$$
+Longitud
+total:
+$$L = h - 1.83 + 457.2$$
+$$L = h + 455.37\ \text{m}$$
+
+3. Caso A:
+Despreciando
+las pérdidas
+menores.
+La pérdida
+total es solo
+por fricción:
+$$h_L = f \cdot \frac{L}{D} \cdot \frac{V^2}{2g}$$
+Sustituyendo:
+$$h_L = 0.0150 \cdot \frac{h + 455.37}{0.1524} \cdot 0.1227$$
+$$h_L = 0.0984 \cdot (h + 455.37) \cdot 0.1227$$
+$$h_L = 0.01208 \cdot (h + 455.37)$$
+$$h_L = 0.01208 \cdot h + 5.501\ \text{m}$$
+Aplicamos
+Bernoulli
+desde la
+superficie
+libre (1)
+hasta la
+sección (2):
+$$\frac{P_1}{\rho g} + z_1 + \frac{V_1^2}{2g} = \frac{P_2}{\rho g} + z_2 + \frac{V_2^2}{2g} + h_L$$
+La velocidad
+superficial es
+cero.
+Las cotas son:
+$$z_1 = h + 3.05$$
+$$z_2 = 1.83$$
+Sustituyendo:
+$$\frac{10^5}{1000 \cdot 9.81} + h + 3.05 = \frac{4.14\cdot 10^5}{1000 \cdot 9.81} + 1.83 + 0.1227 + h_L$$
+$$10.194 + h + 3.05 = 42.202 + 1.83 + 0.1227 + 0.01208 h + 5.501$$
+$$h + 13.244 = 49.656 + 0.01208 \cdot h$$
+$$h - 0.01208 \cdot h = 49.656 - 13.244$$
+$$0.9879 \cdot h = 36.412$$
+$$h = 36.86\ \text{m}$$
+
+4. Caso B:
+Considerando
+las pérdidas
+menores.
+Añadimos la
+pérdida de los
+accesorios
+$$K_{\text{Ltotal}} = 5.2$$
+a la ecuación:
+$$h_L = \left( f \frac{L}{D} + K_{\text{Ltotal}} \right) \frac{V^2}{2g}$$
+$$h_L = 0.01208 h + 5.501 + 5.2 \cdot 0.1227$$
+$$h_L = 0.01208 h + 5.501 + 0.638$$
+$$h_L = 0.01208 h + 6.139\ \text{m}$$
+Sustituyendo
+en Bernoulli:
+$$h + 13.244 = 42.202 + 1.83 + 0.1227 + 0.01208 h + 6.139$$
+$$h + 13.244 = 50.294 + 0.01208 \cdot h$$
+$$0.9879 \cdot h = 50.294 - 13.244$$
+$$0.9879 \cdot h = 37.050$$
+$$h = 37.50\ \text{m}$$
+
+---
+
+## Problema Propuesto 2: Caudal de Boquilla (Aspersión)
+
+### Enunciado
+Determine el
+caudal de agua
+que sale de
+la boquilla.
+
+### Datos
+Presión aire:
+$$P_1 = 150\ \text{kPa}$$
+H agua tanque:
+$$z_1 = 0.80\ \text{m}$$
+Ángulo:
+$$\theta = 40^\circ$$
+L manguera:
+$$\ell = 1.9\ \text{m}$$
+D manguera:
+$$D = 15\ \text{mm}$$
+$$D = 0.015\ \text{m}$$
+Fricción:
+$$f = 0.11$$
+D boquilla:
+$$d = 7.5\ \text{mm}$$
+$$d = 0.0075\ \text{m}$$
+Pérdida boq:
+$$K_n = 0.75$$
+Densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+Gravedad:
+$$g = 9.81\ \text{m/s}^2$$
+
+### Resolución
+
+1. Salida (2):
+La manguera
+inicia en la
+base y sube
+con ángulo
+de 40 por
+una longitud
+de 1.9 m.
+La altura del
+extremo es:
+$$z_2 = \ell \cdot \sin(40^\circ)$$
+$$z_2 = 1.9 \cdot 0.6428$$
+$$z_2 = 1.221\ \text{m}$$
+
+2. Continuidad:
+Por continuidad
+la velocidad de
+la manguera y
+la boquilla se
+relacionan
+según sus
+diámetros:
+$$V_{\text{hose}} \cdot A_{\text{hose}} = V_2 \cdot A_2$$
+$$V_{\text{hose}} = V_2 \cdot \left( \frac{d}{D} \right)^2$$
+$$V_{\text{hose}} = V_2 \cdot \left( \frac{7.5}{15} \right)^2$$
+$$V_{\text{hose}} = V_2 \cdot (0.5)^2$$
+$$V_{\text{hose}} = 0.25 \cdot V_2$$
+
+3. Pérdidas:
+La pérdida de
+carga ocurre en
+la manguera
+(fricción) y la
+boquilla:
+$$h_L = f \frac{\ell}{D} \frac{V_{\text{hose}}^2}{2g} + K_n \frac{V_{\text{hose}}^2}{2g}$$
+$$h_L = \left( f \frac{\ell}{D} + K_n \right) \frac{V_{\text{hose}}^2}{2g}$$
+Calculamos el
+término de
+fricción:
+$$f \frac{\ell}{D} = 0.11 \cdot \frac{1.9}{0.015} = 13.93$$
+Sustituyendo
+la velocidad:
+$$h_L = (13.93 + 0.75) \cdot \frac{(0.25 V_2)^2}{2g}$$
+$$h_L = 14.68 \cdot 0.0625 \cdot \frac{V_2^2}{2g}$$
+$$h_L = 0.9175 \cdot \frac{V_2^2}{2g}$$
+
+4. Bernoulli:
+Aplicamos
+la ecuación de
+energía desde
+la superficie
+libre del
+tanque (1)
+hasta la
+boquilla (2):
+$$\frac{P_1}{\rho g} + z_1 + \frac{V_1^2}{2g} = \frac{P_2}{\rho g} + z_2 + \frac{V_2^2}{2g} + h_L$$
+La presión
+de aire P_1
+es manométrica.
+La salida es a
+la atmósfera:
+$$P_2 = 0\ \text{(man)}$$
+La velocidad
+del tanque es
+cero.
+Sustituyendo:
+$$\frac{1.5\cdot 10^5}{1000 \cdot 9.81} + 0.80 = 0 + 1.221 + \frac{V_2^2}{2g} + 0.9175 \frac{V_2^2}{2g}$$
+$$15.29 + 0.80 = 1.221 + 1.9175 \cdot \frac{V_2^2}{2g}$$
+$$16.09 = 1.221 + 1.9175 \cdot \frac{V_2^2}{2g}$$
+$$14.869 = 1.9175 \cdot \frac{V_2^2}{2g}$$
+$$\frac{V_2^2}{2g} = \frac{14.869}{1.9175}$$
+$$\frac{V_2^2}{2g} = 7.754\ \text{m}$$
+Despejamos la
+velocidad de
+salida V_2:
+$$V_2 = \sqrt{7.754 \cdot 2 \cdot 9.81}$$
+$$V_2 = 12.33\ \text{m/s}$$
+
+5. Caudal:
+Multiplicamos
+la velocidad
+de salida por
+el área de la
+boquilla:
+$$Q = V_2 \cdot \frac{\pi d^2}{4}$$
+$$Q = 12.33 \cdot \frac{\pi \cdot (0.0075)^2}{4}$$
+$$Q = 5.45\cdot 10^{-4}\ \text{m}^3/\text{s}$$
+Convertimos a
+litros por
+segundo:
+$$Q = 0.545\ \text{L/s}$$
+
+---
+
+## Problema Propuesto 3: Diámetro Necesario
+
+### Enunciado
+Determinar el
+diámetro D
+necesario en
+la tubería.
+
+### Datos
+Temp agua:
+$$T = 15.5^\circ\text{C}$$
+Viscosidad:
+$$\nu = 1.12\cdot 10^{-6}\ \text{m}^2/\text{s}$$
+Longitud:
+$$L = 518.16\ \text{m}$$
+Rugosidad:
+$$\epsilon = 0.00015\ \text{m}$$
+Caudal:
+$$Q = 0.736\ \text{m}^3/\text{s}$$
+Elevación A:
+$$z_1 = 13.41\ \text{m}$$
+Elevación B:
+$$z_2 = 0\ \text{m}$$
+Accesorios:
+$$K_{\text{ent}} = 0.5$$
+$$K_{\text{sal}} = 1.0$$
+$$K_{\text{codo}} = 0.2$$
+Codos num:
+$$N = 4$$
+Densidad:
+$$\rho = 1000\ \text{kg/m}^3$$
+
+### Resolución
+
+1. Balance:
+Planteamos la
+ecuación de
+energía entre
+la superficie
+del embalse
+A (1) y la
+del B (2):
+$$\frac{P_1}{\rho g} + z_1 + \frac{V_1^2}{2g} = \frac{P_2}{\rho g} + z_2 + \frac{V_2^2}{2g} + h_L$$
+Ambas están
+a presión
+atmosférica
+y sus
+velocidades
+son nulas:
+$$P_1 = P_2 = 0$$
+$$V_1 = V_2 \approx 0$$
+La diferencia
+de cota es la
+pérdida total:
+$$z_1 - z_2 = h_L$$
+$$13.41 = h_L$$
+
+2. Pérdidas:
+Sumamos todos
+los coeficientes
+de pérdida
+menor:
+$$\sum K = K_{\text{ent}} + K_{\text{sal}} + N \cdot K_{\text{codo}}$$
+$$\sum K = 0.5 + 1.0 + 4 \cdot 0.2$$
+$$\sum K = 2.3$$
+La pérdida de
+carga total
+es:
+$$h_L = \left( f \cdot \frac{L}{D} + \sum K \right) \cdot \frac{V^2}{2g}$$
+Expresamos la
+velocidad del
+tubo en función
+de D:
+$$V = \frac{4Q}{\pi D^2}$$
+$$V = \frac{4 \cdot 0.736}{\pi D^2}$$
+$$V = \frac{0.9371}{D^2}$$
+La cabeza de
+velocidad es:
+$$\frac{V^2}{2g} = \frac{(0.9371)^2}{D^4 \cdot 19.62}$$
+$$\frac{V^2}{2g} = \frac{0.04476}{D^4}$$
+Sustituyendo
+en la fórmula
+de pérdida:
+$$13.41 = \left( f \cdot \frac{518.16}{D} + 2.3 \right) \cdot \frac{0.04476}{D^4}$$
+$$13.41 = \frac{23.19 \cdot f}{D^5} + \frac{0.1029}{D^4}$$
+
+3. Iteración:
+Dado que el
+factor f
+depende de D
+a través de Re,
+hacemos una
+iteración:
+
+Iteración 1:
+Asumimos un
+factor inicial
+estimado:
+$$f = 0.02$$
+Sustituyendo
+en la ecuación:
+$$13.41 = \frac{23.19 \cdot 0.02}{D^5} + \frac{0.1029}{D^4}$$
+$$13.41 = \frac{0.4638}{D^5} + \frac{0.1029}{D^4}$$
+Probando
+$$D = 0.522\ \text{m}$$
+$$13.41 \approx \frac{0.4638}{(0.522)^5} + \frac{0.1029}{(0.522)^4}$$
+$$13.41 \approx \frac{0.4638}{0.0384} + \frac{0.1029}{0.0741}$$
+$$13.41 \approx 12.08 + 1.39 = 13.47$$
+Calculamos Re:
+$$Re = \frac{V \cdot D}{\nu}$$
+$$Re = \frac{0.9371}{D \cdot \nu}$$
+$$Re = \frac{0.9371}{0.522 \cdot 1.12\cdot 10^{-6}}$$
+$$Re = 1.60\cdot 10^6$$
+Calculamos la
+rugosidad
+relativa:
+$$\frac{\epsilon}{D} = \frac{0.00015}{0.522} = 0.000287$$
+En Moody,
+con Re y
+$$\frac{\epsilon}{D}$$
+obtenemos:
+$$f_{\text{nuevo}} \approx 0.0150$$
+
+Iteración 2:
+Usamos
+$$f = 0.0150$$
+Sustituyendo:
+$$13.41 = \frac{23.19 \cdot 0.0150}{D^5} + \frac{0.1029}{D^4}$$
+$$13.41 = \frac{0.34785}{D^5} + \frac{0.1029}{D^4}$$
+Probando
+$$D = 0.495\ \text{m}$$
+$$13.41 \approx \frac{0.34785}{(0.495)^5} + \frac{0.1029}{(0.495)^4}$$
+$$13.41 \approx \frac{0.34785}{0.0297} + \frac{0.1029}{0.0600}$$
+$$13.41 \approx 11.71 + 1.71 = 13.42$$
+Calculamos Re:
+$$Re = \frac{0.9371}{0.495 \cdot 1.12\cdot 10^{-6}}$$
+$$Re = 1.69\cdot 10^6$$
+Rugosidad rel:
+$$\frac{\epsilon}{D} = \frac{0.00015}{0.495} = 0.000303$$
+De la fórmula
+de Colebrook
+con Re y
+rugosidad:
+$$f_{\text{nuevo}} \approx 0.0152$$
+
+Iteración 3:
+Usamos
+$$f = 0.0152$$
+Sustituyendo:
+$$13.41 = \frac{23.19 \cdot 0.0152}{D^5} + \frac{0.1029}{D^4}$$
+$$13.41 = \frac{0.3525}{D^5} + \frac{0.1029}{D^4}$$
+Despejando:
+$$D \approx 0.496\ \text{m}$$
+$$D \approx 49.6\ \text{cm}$$
+El diámetro
+necesario es
+$$49.6\ \text{cm}$$
