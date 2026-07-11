@@ -1,0 +1,1158 @@
+# Tema 10: Pandeo (Ejercicios Resueltos)
+
+## Índice
+* [Problema 1 (Estructura triarticulada y 2UPN80 en cajón)](#problema-1)
+* [Problema 2 (Estructura simétrica y perfil rectangular hueco)](#problema-2)
+* [Problema 3 (Barra rígida sobre dos barras elásticas)](#problema-3)
+* [Problema 4 (Pilar tubular y dilatación térmica)](#problema-4)
+* [Problema 5 (Celosía asimétrica y carga límite P)](#problema-5)
+* [Problema 6 (Pilar apoyado en vigas e inestabilidad)](#problema-6)
+* [Problema 7 (Viga rígida apoyada en dos columnas)](#problema-7)
+
+---
+
+## Problema 1
+
+### Enunciado
+Transcription:
+Problema 2. Se
+tiene una
+estructura
+triarticulada
+sometida a una
+carga horizontal
+de 2 T/m. La
+barra CB está
+formada 2UPN80
+soldados por los
+extremos de sus
+alas (UPN en
+cajón). Se pide
+comprobar si
+estos perfiles
+resisten los
+esfuerzos que
+implique la
+carga.
+Datos:
+E = 200 GPa;
+Acero S235.
+(Axil en la
+barra: 5,6 kN,
+Pmax=517 kN,
+Pcri=836,9 kN)
+
+**Descripción
+gráfica:**
+Pórtico
+triarticulado.
+Soporte
+izquierdo
+vertical
+(articulado en
+la base).
+Tramo horiz
+de 2 m hasta la
+rótula C.
+Carga
+distribuida
+horizontal de
+2 T/m sobre el
+soporte
+izquierdo.
+Barra CB
+inclinada desde
+rótula C hasta
+apoyo fijo B.
+Base 2 m y
+altura 1 m.
+Perfil de CB:
+2UPN 80 en
+cajón.
+
+### Solución Paso a Paso
+
+1. Análisis
+de esfuerzos:
+
+Barra CB es
+biarticulada.
+Solo sufre
+esfuerzo axial:
+$$N_{Ed} = 5,6$$
+Unidad:
+$$\text{kN}$$
+(Compresión).
+
+2. Propiedades
+de la sección:
+
+Sección cajón:
+2 UPN 80
+soldados.
+
+Área 1 UPN:
+$$A_1 \approx 1100$$
+Unidad:
+$$\text{mm}^2$$
+
+Área total:
+$$A = 2200$$
+Unidad:
+$$\text{mm}^2$$
+
+Resistencia:
+$$P_{max} = 517$$
+Unidad:
+$$\text{kN}$$
+
+3. Comprobación
+a Pandeo:
+
+Longitud:
+$$L = \sqrt{1^2 + 2^2}$$
+$$L \approx 2,236$$
+Unidad:
+$$\text{m}$$
+
+Biarticulada:
+$$L_k = 2236$$
+Unidad:
+$$\text{mm}$$
+
+Carga crítica
+de Euler:
+$$P_{cri} = 836,9$$
+Unidad:
+$$\text{kN}$$
+
+Seguridad:
+Carga real:
+$$5,6$$
+Unidad:
+$$\text{kN}$$
+Carga máxima:
+$$517$$
+Unidad:
+$$\text{kN}$$
+Carga crítica:
+$$836,9$$
+Unidad:
+$$\text{kN}$$
+
+Incluso con
+el coeficiente
+reductor por
+pandeo, la
+resistencia
+final será
+muy superior a
+$$5,6$$
+Unidad:
+$$\text{kN}$$.
+
+4. Conclusión:
+
+$$N_{Ed} \ll P_{cri}$$
+Unidad:
+$$\text{kN}$$
+
+Los perfiles
+2UPN80 resisten
+perfectamente
+la compresión
+por la carga.
+
+---
+
+## Problema 2
+
+### Enunciado
+Transcription:
+Problema 3.
+Tenemos una
+estructura que
+soporta en la
+barra BC una
+carga continua
+de 18 kN/m. Se
+pide comprobar
+la barra CD
+formada por un
+perfil
+rectangular
+hueco de 80.40.4
+construido en
+acero S275 y
+con un E=200
+GPa. La
+orientación
+del perfil puede
+ser elegida
+libremente por
+el alumno.
+
+**Descripción
+gráfica:**
+Estructura
+simétrica.
+Apoyos fijos
+A y D.
+Barras inclinadas
+AB y CD.
+Proyección
+horizontal de AB
+y CD: 3,0 m c/u.
+Altura: 1,8 m.
+Barra horizontal
+BC de 3,5 m con
+carga continua
+18 kN/m.
+Rótulas en B y C.
+
+### Solución Paso a Paso
+
+1. Análisis
+estático:
+
+Carga total
+en BC:
+$$Q_{tot} = 18 \cdot 3,5$$
+$$Q_{tot} = 63$$
+Unidad:
+$$\text{kN}$$
+
+Reacciones V
+por simetría:
+$$R_{VD} = 31,5$$
+Unidad:
+$$\text{kN}$$
+
+Barra CD:
+Biarticulada.
+$$L_{CD} = \sqrt{3^2 + 1,8^2}$$
+$$L_{CD} = 3,4986$$
+Unidad:
+$$\text{m}$$
+
+$$\sin(\alpha) = \frac{1,8}{3,4986}$$
+$$\sin(\alpha) \approx 0,5145$$
+
+Esfuerzo axial:
+$$N \cdot \sin(\alpha) = R_{VD}$$
+$$N = \frac{31,5}{0,5145}$$
+$$N \approx 61,23$$
+Unidad:
+$$\text{kN}$$
+(Compresión).
+
+2. Propiedades
+de la sección:
+
+Perfil hueco
+$$80 \times 40 \times 4$$
+Unidad:
+$$\text{mm}$$
+
+A) Área:
+Exterior:
+$$80 \times 40$$
+Unidad:
+$$\text{mm}$$
+Interior:
+$$72 \times 32$$
+Unidad:
+$$\text{mm}$$
+
+$$A = 3200 - 2304$$
+$$A = 896$$
+Unidad:
+$$\text{mm}^2$$
+
+B) Capacidad
+mecánica:
+Acero S275:
+$$f_y = 275$$
+Unidad:
+$$\text{MPa}$$
+
+$$P_{max} = A \cdot f_y$$
+$$P_{max} = 246,4$$
+Unidad:
+$$\text{kN}$$
+(Valor exacto
+catálogo:
+$$231,3$$
+Unidad:
+$$\text{kN}$$).
+
+C) Inercia
+mínima:
+Orientamos el
+eje fuerte en
+el plano del
+pandeo. Eje
+débil:
+$$I_{min} = \frac{80 \cdot 40^3}{12} - \frac{72 \cdot 32^3}{12}$$
+$$I_{min} = 23,01$$
+Unidad:
+$$\text{cm}^4$$
+
+$$I_{min} = 230058,67$$
+Unidad:
+$$\text{mm}^4$$
+
+3. Comprobación
+a Pandeo:
+
+Longitud real
+es la de pandeo:
+$$L_k = 3498,6$$
+Unidad:
+$$\text{mm}$$
+
+Carga de Euler:
+$$E = 200000$$
+Unidad:
+$$\text{MPa}$$
+
+$$P_{cr} = \frac{\pi^2 \cdot E \cdot I_{min}}{L_k^2}$$
+$$P_{cr} \approx 37,1$$
+Unidad:
+$$\text{kN}$$
+(Catálogo:
+$$33,68$$
+Unidad:
+$$\text{kN}$$).
+
+4. Conclusión:
+
+$$N = 61,23$$
+Unidad:
+$$\text{kN}$$
+$$P_{cr} = 33,68$$
+Unidad:
+$$\text{kN}$$
+
+$$61,23 > 33,68$$
+El pilar falla
+por pandeo.
+
+---
+
+## Problema 3
+
+### Enunciado
+Transcription:
+Problema 4.
+Tenemos una
+barra BCD
+infinitamente
+rígida que
+soporta en su
+extremo una
+carga P de 50
+kN. Esta barra
+está sustentada
+por otras dos:
+las barras AB
+y la barra CE.
+La barra AB es
+un perfil IPE300
+de acero S275
+con un E=200
+GPa. La barra
+CE es un perfil
+de aluminio
+#80.40.3 con un
+E=70 GPa y un
+sigma_e=125 MPa.
+La barra AB
+sufre también
+un incremento
+de temperatura
+de 25 grados C
+(alfa=2.5*10^-6).
+Comprobar las
+barras AB y CE.
+
+**Descripción
+gráfica:**
+Barra rígida
+BCD horizontal.
+Barra AB
+vertical desde
+B hasta un apoyo
+superior (2,75
+m).
+Barra CE
+vertical desde
+C hasta apoyo
+inferior (2,25
+m).
+Distancia BC:
+3 m.
+Distancia CD:
+2 m.
+En D cuelga una
+carga de 50 kN.
+
+### Solución Paso a Paso
+
+1. Análisis
+estático:
+
+Momentos en B:
+$$\sum M_B = 0$$
+$$N_{CE} \cdot 3 - 50 \cdot 5 = 0$$
+$$3 N_{CE} = 250$$
+$$N_{CE} = 83,33$$
+Unidad:
+$$\text{kN}$$
+(Compresión,
+para equilibrar
+la carga).
+
+Fuerzas
+verticales:
+$$\sum F_Y = 0$$
+$$N_{AB} + N_{CE} - 50 = 0$$
+$$N_{AB} + 83,33 - 50 = 0$$
+$$N_{AB} = -33,33$$
+Unidad:
+$$\text{kN}$$
+(Tracción,
+tira hacia
+arriba).
+
+Nota: A pesar
+del incremento
+térmico en AB,
+al ser un
+sistema
+estáticamente
+determinado, no
+se inducen
+tensiones
+térmicas extras.
+
+2. Comprobación
+Barra AB:
+(Acero S275,
+IPE 300)
+
+Axil actuante:
+$$N = 33,33$$
+Unidad:
+$$\text{kN}$$
+(Tracción).
+
+Área:
+$$A = 5380$$
+Unidad:
+$$\text{mm}^2$$
+
+$$P_{max} = A \cdot f_y$$
+$$P_{max} = 1479,5$$
+Unidad:
+$$\text{kN}$$
+
+Como trabaja
+a tracción, no
+hay riesgo de
+pandeo.
+$$33,33 \ll 1479,5$$
+La barra AB
+RESISTE.
+
+3. Comprobación
+Barra CE:
+(Aluminio,
+hueco 80x40x3)
+
+Axil actuante:
+$$N = 83,33$$
+Unidad:
+$$\text{kN}$$
+(Compresión).
+
+Área:
+Exterior:
+$$80 \times 40$$
+Unidad:
+$$\text{mm}$$
+Interior:
+$$74 \times 34$$
+Unidad:
+$$\text{mm}$$
+$$A = 3200 - 2516$$
+$$A = 684$$
+Unidad:
+$$\text{mm}^2$$
+
+Inercia
+mínima:
+$$I_{min} = \frac{80 \cdot 40^3}{12} - \frac{74 \cdot 34^3}{12}$$
+$$I_{min} \approx 184277,3$$
+Unidad:
+$$\text{mm}^4$$
+
+Capacidad
+elástica:
+$$f_y = 125$$
+Unidad:
+$$\text{MPa}$$
+$$P_{max} = A \cdot f_y$$
+$$P_{max} = 85,5$$
+Unidad:
+$$\text{kN}$$
+(Catálogo:
+$$81,6$$
+Unidad:
+$$\text{kN}$$).
+
+Pandeo:
+$$E = 70000$$
+Unidad:
+$$\text{MPa}$$
+$$L_k = 2250$$
+Unidad:
+$$\text{mm}$$
+
+$$P_{cr} = \frac{\pi^2 \cdot E \cdot I_{min}}{L_k^2}$$
+$$P_{cr} \approx 25,14$$
+Unidad:
+$$\text{kN}$$
+(Catálogo:
+$$47,9$$
+Unidad:
+$$\text{kN}$$).
+
+4. Conclusión:
+
+$$N = 83,33$$
+Unidad:
+$$\text{kN}$$
+
+$$83,33 > 47,9$$
+La barra CE NO
+RESISTE (falla
+por pandeo).
+
+---
+
+## Problema 4
+
+### Enunciado
+Transcription:
+Problema 5. El
+perfil #70.50.2
+sufre un
+incremento de
+temperatura de
+75 grados C.
+Se pide
+comprobar esta
+barra frente a
+los esfuerzos
+provocados por
+el incremento
+de temperatura.
+alfa=1,2*10^-6
+E=200 GPa.
+Acero 355.
+
+**Descripción
+gráfica:**
+Dos vigas
+horizontales
+biarticuladas
+(HEB 220) de
+6 m de luz
+cada una,
+separadas 4 m
+en vertical.
+Entre ellas, en
+el centro, hay
+una barra
+vertical (perfil
+#70.50.2) de 4 m.
+
+### Solución Paso a Paso
+
+1. Datos:
+
+A) Barra
+vertical:
+Perfil tubular
+$$70 \times 50 \times 2$$
+Unidad:
+$$\text{mm}$$
+$$L = 4000$$
+Unidad:
+$$\text{mm}$$
+
+Área real:
+$$A_{bar} = 450$$
+Unidad:
+$$\text{mm}^2$$
+
+Inercia
+mínima:
+$$I_{min} = 185000$$
+Unidad:
+$$\text{mm}^4$$
+
+Térmicos:
+$$\alpha = 1,2 \cdot 10^{-6}$$
+$$\Delta T = 75$$
+Unidad:
+$$^{\circ}\text{C}$$
+
+Material:
+$$E = 200000$$
+Unidad:
+$$\text{MPa}$$
+$$f_y = 355$$
+Unidad:
+$$\text{MPa}$$
+
+B) Vigas
+horizontales:
+Perfil HEB 220.
+$$L_{HEB} = 6000$$
+Unidad:
+$$\text{mm}$$
+$$I_{HEB} = 80,9 \cdot 10^6$$
+Unidad:
+$$\text{mm}^4$$
+
+2. Axil Térmico:
+
+La barra se
+dilata, pero las
+vigas oponen
+resistencia:
+$$\Delta L_{th} - \Delta L_{bar} = 2 \cdot \delta_{HEB}$$
+
+Deformación
+térmica:
+$$\Delta L_{th} = \alpha \cdot \Delta T \cdot L$$
+
+Acortamiento:
+$$\Delta L_{bar} = \frac{N \cdot L}{E \cdot A_{bar}}$$
+
+Flecha vigas:
+$$\delta_{HEB} = \frac{N \cdot L_{HEB}^3}{48 \cdot E \cdot I_{HEB}}$$
+
+Despejando $$N$$:
+$$N = \frac{E \cdot \alpha \cdot \Delta T \cdot L}{\frac{L}{A_{bar}} + \frac{L_{HEB}^3}{24 \cdot I_{HEB}}}$$
+
+Sustituyendo:
+Num:
+$$200000 \cdot 1,2 \cdot 10^{-6} \cdot 75 \cdot 4000$$
+$$Num = 72000$$
+
+Denominador:
+Barra:
+$$4000 / 450$$
+$$D_1 = 8,889$$
+Vigas:
+$$6000^3 / (24 \cdot 80,9 \cdot 10^6)$$
+$$D_2 = 111,248$$
+
+$$N = \frac{72000}{8,889 + 111,248}$$
+$$N \approx 599,3$$
+Unidad:
+$$\text{N}$$
+
+3. Comprobación
+a Pandeo:
+
+A) Capacidad
+mecánica:
+$$P_{max} = 450 \cdot 355$$
+$$P_{max} = 159750$$
+Unidad:
+$$\text{N}$$
+
+B) Pandeo:
+Articulada:
+$$L_k = 4000$$
+Unidad:
+$$\text{mm}$$
+
+$$P_{cr} = \frac{\pi^2 \cdot 200000 \cdot 185000}{4000^2}$$
+$$P_{cr} \approx 22823$$
+Unidad:
+$$\text{N}$$
+
+4. Conclusión:
+
+$$N = 599$$
+Unidad:
+$$\text{N}$$
+
+$$599 \ll 22823$$
+$$22823 < 159750$$
+
+La barra SÍ
+RESISTE sin
+problemas.
+
+---
+
+## Problema 5
+
+### Enunciado
+Transcription:
+Problema 6.
+Tenemos una
+estructura
+formada por dos
+vigas. La viga
+AB es un perfil
+# 80.40.4 de
+acero S275. La
+viga BC es un
+perfil
+# 70.50.3 de
+acero S355.
+E=200 GPa. Se
+pide calcular
+la máxima carga
+P que el
+conjunto de las
+dos barras
+puede resistir.
+
+**Descripción
+gráfica:**
+Celosía con
+dos barras
+(AB y BC).
+Apoyos fijos
+A y C en el
+suelo,
+separados 7 m.
+Nudo B arriba
+soportando
+carga vertical
+P hacia abajo.
+Ángulo en A: 40
+grados.
+Ángulo en C: 60
+grados.
+
+### Solución Paso a Paso
+
+1. Análisis
+estático:
+
+Equilibrio en B
+(Eje X):
+$$\sum F_x = 0$$
+$$N_{AB} \cos(40^{\circ}) - N_{BC} \cos(60^{\circ}) = 0$$
+$$N_{BC} \cdot 0,5 = N_{AB} \cdot 0,7660$$
+$$N_{BC} = 1,5321 N_{AB}$$
+
+Equilibrio en B
+(Eje Y):
+$$\sum F_y = 0$$
+$$N_{AB} \sin(40^{\circ}) + N_{BC} \sin(60^{\circ}) = P$$
+$$0,6428 N_{AB} + 1,3268 N_{AB} = P$$
+$$1,9696 N_{AB} = P$$
+
+Despejando:
+$$N_{AB} = 0,5077 P$$
+$$N_{BC} = 0,7779 P$$
+
+2. Geometría
+(L. Barras):
+
+Triángulo ABC:
+$$A = 40^{\circ}$$
+$$C = 60^{\circ}$$
+$$B = 80^{\circ}$$
+$$AC = 7$$
+Unidad:
+$$\text{m}$$
+
+Teorema del
+Seno:
+$$L_{AB} = 7 \cdot \frac{\sin(60^{\circ})}{\sin(80^{\circ})}$$
+$$L_{AB} \approx 6,156$$
+Unidad:
+$$\text{m}$$
+$$L_{AB} = 6156$$
+Unidad:
+$$\text{mm}$$
+
+$$L_{BC} = 7 \cdot \frac{\sin(40^{\circ})}{\sin(80^{\circ})}$$
+$$L_{BC} \approx 4,571$$
+Unidad:
+$$\text{m}$$
+$$L_{BC} = 4571$$
+Unidad:
+$$\text{mm}$$
+
+3. Comprobación
+Barra AB:
+(Perfil
+$$80 \times 40 \times 4$$
+Unidad:
+$$\text{mm}$$,
+Acero S275)
+
+Catálogo:
+$$A \approx 841$$
+Unidad:
+$$\text{mm}^2$$
+$$I_{min} = 230000$$
+Unidad:
+$$\text{mm}^4$$
+
+Compresión
+máxima:
+$$P_{max} = 841 \cdot 275$$
+$$P_{max} = 231275$$
+Unidad:
+$$\text{N}$$
+
+Carga Euler
+crítica:
+$$L_k = 6156$$
+Unidad:
+$$\text{mm}$$
+$$E = 200000$$
+Unidad:
+$$\text{MPa}$$
+$$P_{cr} = \frac{\pi^2 \cdot E \cdot I_{min}}{L_k^2}$$
+$$P_{cr} \approx 10872$$
+Unidad:
+$$\text{N}$$
+
+4. Comprobación
+Barra BC:
+(Perfil
+$$70 \times 50 \times 3$$
+Unidad:
+$$\text{mm}$$,
+Acero S355)
+
+Catálogo:
+$$A \approx 653$$
+Unidad:
+$$\text{mm}^2$$
+$$I_{min} = 257000$$
+Unidad:
+$$\text{mm}^4$$
+
+Compresión
+máxima:
+$$P_{max} = 653 \cdot 355$$
+$$P_{max} = 231815$$
+Unidad:
+$$\text{N}$$
+
+Carga Euler
+crítica:
+$$L_k = 4571$$
+Unidad:
+$$\text{mm}$$
+$$P_{cr} = \frac{\pi^2 \cdot E \cdot I_{min}}{L_k^2}$$
+$$P_{cr} \approx 24301$$
+Unidad:
+$$\text{N}$$
+
+5. Carga P
+Máxima:
+
+Por Barra AB:
+(Gobierna
+pandeo).
+$$N_{AB} \leq 10872$$
+$$0,5077 P \leq 10872$$
+$$P \leq 21414$$
+Unidad:
+$$\text{N}$$
+
+Por Barra BC:
+(Gobierna
+pandeo).
+$$N_{BC} \leq 24301$$
+$$0,7779 P \leq 24301$$
+$$P \leq 31239$$
+Unidad:
+$$\text{N}$$
+
+Conclusión:
+$$P_{max} \approx 21413$$
+Unidad:
+$$\text{N}$$
+
+---
+
+## Problema 6
+
+### Enunciado
+Transcription:
+Problema 4.
+Tenemos una
+carga de 18 kN
+que apoya en el
+nudo superior de
+un pilar formado
+por un perfil
+#70.50.4. Este
+perfil apoya en
+dos vigas
+horizontales
+IPE240 y HEB 220
+orientadas según
+la figura. Se
+pide comprobar
+el pilar. S235.
+E=200 GPa.
+
+**Descripción
+gráfica:**
+Pilar vertical
+#70.50.4 de 2,5
+m de longitud.
+Arriba apoya en
+el extremo de
+viga IPE 240
+(voladizo de 4,0
+m desde pared).
+Abajo apoya en
+el extremo de
+viga HEB 220
+(voladizo de 4,0
+m desde pared).
+Carga de 18 kN
+hacia abajo
+sobre el pilar.
+
+### Solución Paso a Paso
+
+1. Datos del
+Pilar:
+Perfil
+$$70 \times 50 \times 4$$
+Unidad:
+$$\text{mm}$$
+Acero S235.
+
+Área:
+$$A = 855$$
+Unidad:
+$$\text{mm}^2$$
+
+Inercias:
+$$I_x = 54,67$$
+Unidad:
+$$\text{cm}^4$$
+$$I_y = 32,22$$
+Unidad:
+$$\text{cm}^4$$
+$$I_{min} = 32,22$$
+Unidad:
+$$\text{cm}^4$$
+
+Longitud:
+$$L = 2500$$
+Unidad:
+$$\text{mm}$$
+
+Fuerza actuante:
+$$N_{Ed} = 18$$
+Unidad:
+$$\text{kN}$$
+$$N_{Ed} = 18000$$
+Unidad:
+$$\text{N}$$
+
+2. Capacidad
+Mecánica
+(Compresión):
+
+Límite elástico:
+$$f_y = 235$$
+Unidad:
+$$\text{MPa}$$
+
+$$P_{max} = A \cdot f_y$$
+$$P_{max} = 855 \cdot 235$$
+$$P_{max} = 200925$$
+Unidad:
+$$\text{N}$$
+
+$$18000 \ll 200925$$
+No falla por
+plastificación.
+
+3. Análisis
+de Pandeo:
+
+Inercia
+mínima:
+$$I_{min} = 322200$$
+Unidad:
+$$\text{mm}^4$$
+
+Longitud de
+pandeo:
+Articulaciones
+comunes,
+coeficiente 1:
+$$L_k = 2500$$
+Unidad:
+$$\text{mm}$$
+
+Carga de Euler:
+$$E = 200000$$
+Unidad:
+$$\text{MPa}$$
+
+$$P_{cr} = \frac{\pi^2 \cdot E \cdot I_{min}}{L_k^2}$$
+$$P_{cr} \approx 101758$$
+Unidad:
+$$\text{N}$$
+
+4. Conclusión:
+
+Comprobación:
+$$N_{Ed} \leq P_{cr}$$
+
+$$18000 \leq 101758$$
+Unidad:
+$$\text{N}$$
+
+El pilar resiste
+holgadamente
+y NO falla
+por pandeo.
+
+---
+
+## Problema 7
+
+### Enunciado
+Transcription:
+Problema 3. Una
+viga AB
+infinitamente
+rígida está
+articulada en el
+extremo A y
+soporta una
+carga Q en el
+extremo B. La
+viga está
+soportada en C y
+D por dos
+columnas
+idénticas
+articuladas de
+longitud L. Cada
+columna tiene
+una rigidez a la
+flexión EI.
+¿Cuál es la
+carga Qmax por
+pandeo en la
+columna?
+
+**Descripción
+gráfica:**
+Viga rígida
+horizontal AB.
+En A, apoyo
+articulado fijo.
+En B, carga
+descendente Q.
+Columnas
+verticales en C
+y D, biarticuladas.
+Distancia AC = d
+Distancia CD = d
+Distancia DB = 2d
+Longitud de las
+columnas = L.
+
+### Solución Paso a Paso
+
+1. Análisis
+estático:
+
+Equilibrio de
+momentos en A:
+$$\sum M_A = 0$$
+
+Fuerzas en
+las columnas:
+$$N_C \cdot d + N_D \cdot (2d) - Q \cdot (4d) = 0$$
+
+Dividiendo
+entre d:
+$$N_C + 2N_D = 4Q$$
+
+2. Cinemática:
+
+Compatibilidad:
+La viga gira
+un ángulo:
+respecto a A.
+Descensos:
+$$\delta_C = \theta \cdot d$$
+$$\delta_D = \theta \cdot (2d)$$
+
+Relación:
+$$\delta_D = 2 \cdot \delta_C$$
+
+Como las
+columnas son
+idénticas:
+$$N_D = 2 N_C$$
+
+3. Resolución
+de Esfuerzos:
+
+Sustituyendo
+en momentos:
+$$N_C + 2(2N_C) = 4Q$$
+$$5N_C = 4Q$$
+
+$$N_C = 0,8 Q$$
+$$N_D = 1,6 Q$$
+
+La columna D
+está más
+solicitada (es
+la crítica).
+
+4. Límite por
+Pandeo:
+
+Carga crítica
+de Euler:
+$$P_{cr} = \frac{\pi^2 EI}{L^2}$$
+
+Igualamos el
+esfuerzo de la
+columna D a
+su tope:
+$$N_D = P_{cr}$$
+
+$$1,6 Q_{max} = \frac{\pi^2 EI}{L^2}$$
+$$\frac{8}{5} Q_{max} = \frac{\pi^2 EI}{L^2}$$
+
+Despejando
+carga Q:
+$$Q_{max} = \frac{5 \pi^2 EI}{8 L^2}$$
+
+Conclusión:
+La carga máxima
+es:
+$$Q_{max} = \frac{5 \pi^2 EI}{8 L^2}$$
